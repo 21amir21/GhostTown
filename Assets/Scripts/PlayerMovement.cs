@@ -14,13 +14,12 @@ public class PlayerMovement : MonoBehaviour
 	public KeyCode upArrow, leftArrow, rightArrow;
 
 	// grounded check
-	public Transform groundCheck;
-	public float groundCheckRadius; // TODO: kinda redundant
+	public Transform colliderCheck;
+	public Vector2 checkArea;
 	public LayerMask groundLayerMask;
 	private bool grounded;
 
 	// platform check
-	public Transform platformCheckCircle;
 	public Transform platform; // TODO: public for testing
 	public LayerMask platformLayerMask;
 	private bool isOnPlatform = false;
@@ -28,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		checkArea = new Vector2(0.99f, 0.1f);
 		rigidBody = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
@@ -77,24 +77,25 @@ public class PlayerMovement : MonoBehaviour
 		isOnPlatform = PlatformCheck();
 	}
 
-	// used for the execution of commands
+	// used for the execution of commands for the physics engine
 	private void FixedUpdate()
 	{
 		// used 50 to mimic the movement speed done by a normal Update() function
 		rigidBody.velocity = new Vector2(actualMoveSpeed * Time.fixedDeltaTime * 50, rigidBody.velocity.y);
 
-		// updates grounded to be true whenever the groundCheck circle is in contact with ground
-		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayerMask);
-	}
+		// updates grounded to be true whenever the colliderCheck circle is in contact with ground
+        grounded = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, groundLayerMask);
+    }
 
-	// used as a check to see if the player is standing on a platform
-	// returns true if on a platform, false otherwise
-	private bool PlatformCheck()
+    // used as a check to see if the player is standing on a platform
+    // returns true if on a platform, false otherwise
+    private bool PlatformCheck()
 	{
 		// uses a seperate object at the feet of the player to check if it is overlaping with a platform
 		// returns:	an object of type Collider2D if a platform is detected, which is the collider of the platform,
 		//			null otherwise
-		Collider2D hit = Physics2D.OverlapCircle(platformCheckCircle.position, 0.2f, platformLayerMask);
+		Collider2D hit = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, platformLayerMask); // TODO: add comments
+
 		if (hit != null)
 		{
 			isOnPlatform = true;
@@ -107,5 +108,12 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		return platform != null;
+	}
+
+	// used for visualisation in the editor
+	void OnDrawGizmos() // TODO: Remove later
+	{
+		Gizmos.color = new Color(1, 0, 0, 0.5f);
+		Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
 	}
 }
