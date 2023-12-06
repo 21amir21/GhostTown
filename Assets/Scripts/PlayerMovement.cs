@@ -22,7 +22,11 @@ public class PlayerMovement : MonoBehaviour
 	// platform check
 	public Transform platform; // TODO: public for testing
 	public LayerMask platformLayerMask;
+	public LayerMask rotatingPlatformLayerMask;
 	private bool isOnPlatform = false;
+
+	// rotation
+	private Quaternion defultRotation;
 
 	// Start is called before the first frame update
 	void Start()
@@ -31,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 		rigidBody = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
+		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
 	}
 
 	// Update is called once per frame
@@ -74,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 		else
 			transform.parent = null;
 
-		isOnPlatform = PlatformCheck();
+		PlatformCheck();
 	}
 
 	// used for the execution of commands for the physics engine
@@ -95,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
 		// returns:	an object of type Collider2D if a platform is detected, which is the collider of the platform,
 		//			null otherwise
 		Collider2D hit = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, platformLayerMask); // TODO: add comments
+		Collider2D rotateHit = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, rotatingPlatformLayerMask); // TODO: add comments
 
 		if (hit != null)
 		{
@@ -106,6 +112,20 @@ public class PlayerMovement : MonoBehaviour
 			isOnPlatform = false;
 			platform = null;
 		}
+		if (rotateHit != null)
+		{
+			isOnPlatform = true;
+			rigidBody.gravityScale = 5;
+			rigidBody.freezeRotation = false;
+		}
+		else
+		{
+			isOnPlatform = false;
+			rigidBody.gravityScale = 1;
+			rigidBody.freezeRotation = true;
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1f);
+		}
+
 
 		return platform != null;
 	}
