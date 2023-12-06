@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6886512651996082686}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 6886512651996082683}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4533a186576c14c4e901f25d5ce9a2eb, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -129,12 +129,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &6886512651996082686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,16 +153,19 @@ MonoBehaviour:
   upArrow: 273
   leftArrow: 276
   rightArrow: 275
-  groundCheck: {fileID: 6886512652538666474}
-  groundCheckRadius: 0.2
+  colliderCheck: {fileID: 6886512652538666474}
+  checkArea: {x: 0, y: 0}
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  platformCheckCircle: {fileID: 6886512652538666474}
   platform: {fileID: 0}
+  rotatingPlatform: {fileID: 0}
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  rotatingPlatformLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &6886512652538666475
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6886512652538666475}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.499, z: 0.061253957}
+  m_LocalPosition: {x: 0, y: -0.49, z: 0.061253957}
   m_LocalScale: {x: 1, y: 0.6397953, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

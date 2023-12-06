@@ -117,8 +117,8 @@ public class PlayerMovement : MonoBehaviour
 		if (rotateHit != null)
 		{
 			isOnPlatform = true;
-			rigidBody.gravityScale = 5;
-			rigidBody.freezeRotation = false;
+			rigidBody.gravityScale = 5; // so that the player can make the platform fall faster and so they slip faster
+			rigidBody.freezeRotation = false; // makes the player rotate with the platform
 		}
 		else
 		{
@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 			rotatingPlatform = null;
 			rigidBody.gravityScale = 1;
 			rigidBody.freezeRotation = true;
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1f);
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1f); // resets the rotation of the player
 		}
 
 		return platform != null;
