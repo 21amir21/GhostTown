@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
 	// platform check
 	public Transform platform; // TODO: public for testing
+	public GameObject rotatingPlatform;
 	public LayerMask platformLayerMask;
 	public LayerMask rotatingPlatformLayerMask;
 	private bool isOnPlatform = false;
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
 		rigidBody = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
+		rotatingPlatform = null;
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
 	}
 
@@ -99,13 +101,13 @@ public class PlayerMovement : MonoBehaviour
 		// uses a seperate object at the feet of the player to check if it is overlaping with a platform
 		// returns:	an object of type Collider2D if a platform is detected, which is the collider of the platform,
 		//			null otherwise
-		Collider2D hit = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, platformLayerMask); // TODO: add comments
+		Collider2D plat = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, platformLayerMask); // TODO: add comments
 		Collider2D rotateHit = Physics2D.OverlapBox(colliderCheck.position, checkArea, 0f, rotatingPlatformLayerMask); // TODO: add comments
 
-		if (hit != null)
+		if (plat != null)
 		{
 			isOnPlatform = true;
-			platform = hit.transform; // the transform object inside the collider
+			platform = plat.transform; // the transform object inside the collider
 		}
 		else
 		{
@@ -121,11 +123,11 @@ public class PlayerMovement : MonoBehaviour
 		else
 		{
 			isOnPlatform = false;
+			rotatingPlatform = null;
 			rigidBody.gravityScale = 1;
 			rigidBody.freezeRotation = true;
 			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1f);
 		}
-
 
 		return platform != null;
 	}
