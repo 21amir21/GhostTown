@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,910 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: constructionworker_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 471
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef512222fdf63a4b92f116c5c06f146
+      internalID: 264257170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 565
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d651c78d3d8e143a89233c57a33444
+      internalID: 1820070629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 565
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34567da4814fa3448ab6c54ad186a816
+      internalID: -1512163454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_4
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 248
+        width: 301
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cb54c1359a066428673f43c0c3ab4b
+      internalID: -514679703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 472
+        width: 82
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e33309415a4534449514c20d423e122
+      internalID: -1636468209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 472
+        width: 85
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10b2a454f5a56e4c9cc7339a6a645e1
+      internalID: -1706465740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 471
+        width: 84
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1563a0ece43f6d541b3588577333d479
+      internalID: -606213895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_8
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 469
+        width: 83
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffa65dcac94e0b41b639556bc4e0ce0
+      internalID: -1882600515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 370
+        width: 54
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114288a39c9f1de49bc383f72965e87c
+      internalID: -1093972981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 372
+        width: 58
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c04652d5e694c4597101042aa290ed
+      internalID: 1033719714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 373
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193159968cfb96340b7196cab7b30b0f
+      internalID: 1070046550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 371
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bfbee5538e8b34681b3f4f9b28860f
+      internalID: -1182025724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 373
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d955ddc68ca4e924c994d901cb13e123
+      internalID: -1468409775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 263
+        width: 66
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba2d7bb20694c0439cd3193bc7d8de6
+      internalID: -538366583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 263
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f39f124b98373458798a0df6bc41cd
+      internalID: -794262238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 263
+        width: 63
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338eec126a10a7342887792d7e7029f3
+      internalID: 373503124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 263
+        width: 81
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f4e36462e9b424f9f7d1f33e233f33
+      internalID: -1039393287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_18
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 263
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb70348b52b8554cb9efaf641fac9ef
+      internalID: -812944708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 262
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c84afa38da8d14ab3c5aebde02fd09
+      internalID: 885843468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_22
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 141
+        width: 90
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1a94955fbeaf040aa513fdc98f7bf6
+      internalID: -178151038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 141
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e867df748c6d704797f38a9b5ba78e8
+      internalID: -886919360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 141
+        width: 48
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b6db1d7906f284bbcff9a35b8bc030
+      internalID: -122696078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_26
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 141
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c597342b8cd2770448c91f1a0193d391
+      internalID: 1107476800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_27
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 142
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac531c7c5773a374988ca80da9fd0eb0
+      internalID: -1344969408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_28
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 141
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e11ae3d11b3614688dffa1edcb18d7
+      internalID: 1000687791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_29
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 141
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcc02bb874d51a4fb09189850d0a409
+      internalID: -995650254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_30
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 142
+        width: 47
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71484f060d100784c8e246a1de4cffe7
+      internalID: -886858246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_31
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 141
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a231d96b131104c9f089cbb0d99fbe
+      internalID: 286382825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_32
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 142
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596fb999d2c2be542b7b1df0bca6b53b
+      internalID: 1836838253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_33
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 142
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc45ed588f41ec479581a4f360b6cbb
+      internalID: -961876946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_35
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 142
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc34b7defc7e04468adaf3f8053c9a9
+      internalID: -1794940637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 34
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6fe740ff8568e489a8febe19a83cc7
+      internalID: -868777410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_44
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 35
+        width: 53
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c25e8b9298d29b4d9c6998898f24b34
+      internalID: 1904097858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_45
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 35
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327b018f6bf9e34488ab142afcc4ecb1
+      internalID: 1960236030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_46
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 35
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839b8f8489f8e7243946d07b6a5f8c6d
+      internalID: -1436107887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_47
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 34
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900b8065f3d4dab4bb0a78528d15b254
+      internalID: -1656576259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_48
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 35
+        width: 52
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de85fdc07896064e99fd68edda37462
+      internalID: 1673143413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_49
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 35
+        width: 49
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c92952710987647b3bd8f68ac031b2
+      internalID: -791559511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_50
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 34
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f7c05fbb783b741828d8a8cb888972
+      internalID: 105417320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_51
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 34
+        width: 60
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3228dee3bd5f0354e8a7c871a9f76b7b
+      internalID: -1574903712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_52
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 35
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcc43cb07a28ca4f815bdb9044c4f8f
+      internalID: -1594378971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 35
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3aeb29e9ecf534d824cf54e755c172
+      internalID: -922958971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworker_54
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 35
+        width: 54
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf63b12b3fb9d744caa2ee4e855231b6
+      internalID: -813132981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +1017,62 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      constructionworker_26: 1107476800
+      constructionworker_19: 885843468
+      constructionworker_54: -813132981
+      constructionworker_32: 1836838253
+      constructionworker_30: -886858246
+      constructionworker_36: 466169742
+      constructionworker_7: -606213895
+      constructionworker_38: -1320166370
+      constructionworker_29: -995650254
+      constructionworker_52: -1594378971
+      constructionworker_14: -538366583
+      constructionworker_51: -1574903712
+      constructionworker_0: 264257170
+      constructionworker_21: -1882981783
+      constructionworker_6: -1706465740
+      constructionworker_9: -1093972981
+      constructionworker_5: -1636468209
+      constructionworker_24: -27643693
+      constructionworker_25: -122696078
+      constructionworker_15: -794262238
+      constructionworker_46: -1436107887
+      constructionworker_1: 1820070629
+      constructionworker_10: 1033719714
+      constructionworker_22: -178151038
+      constructionworker_27: -1344969408
+      constructionworker_23: -886919360
+      constructionworker_34: -482535262
+      constructionworker_11: 1070046550
+      constructionworker_50: 105417320
+      constructionworker_39: -501035068
+      constructionworker_47: -1656576259
+      constructionworker_8: -1882600515
+      constructionworker_17: -1039393287
+      constructionworker_3: -236072617
+      constructionworker_4: -514679703
+      constructionworker_13: -1468409775
+      constructionworker_41: 1278656087
+      constructionworker_43: -868777410
+      constructionworker_31: 286382825
+      constructionworker_42: -83387724
+      constructionworker_49: -791559511
+      constructionworker_37: 1983999792
+      constructionworker_16: 373503124
+      constructionworker_2: -1512163454
+      constructionworker_18: -812944708
+      constructionworker_44: 1904097858
+      constructionworker_28: 1000687791
+      constructionworker_45: 1960236030
+      constructionworker_48: 1673143413
+      constructionworker_35: -1794940637
+      constructionworker_12: -1182025724
+      constructionworker_33: -961876946
+      constructionworker_53: -922958971
+      constructionworker_40: -454256107
+      constructionworker_20: -1680792599
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
