@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
-    public int health = 600;
+    public int health = 100;
     public int lives = 3;
     public float flickerDura1on = 0.1f;
     private float flickerTime = 0f;
@@ -82,6 +83,7 @@ public class PlayerStats : MonoBehaviour
         if (this.flickerTime < this.flickerDura1on)
         {
             this.flickerTime = this.flickerTime + Time.deltaTime;
+
         }
         else if (this.flickerTime >= this.flickerDura1on)
         {

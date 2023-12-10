@@ -13,14 +13,15 @@ public class EnemyThrowBrick : MonoBehaviour
     void Update()
     {
         // Check if the player is within the detection range
-        if (player != null && Vector3.Distance(transform.position, player.position) <= detectionRange)
+        if (player != null && Vector2.Distance(transform.position, player.position) <= detectionRange)
         {
             // Rotate the enemy to face the player
-            //transform.LookAt(player);
+            transform.LookAt(player);
 
-            Invoke("ThrowBrick", 1);
+            // Invoke("ThrowBrick", 1);
             // Throw a brick
-            ///ThrowBrick();
+
+            ThrowBrick();
         }
     }
 
@@ -28,7 +29,10 @@ public class EnemyThrowBrick : MonoBehaviour
     {
         Vector3 hmada = new Vector3(transform.position.x + 5, transform.position.y, transform.position.z);
         // Instantiate a new brick
-        GameObject brick = Instantiate(brickPrefab, transform.position + hmada,Quaternion.identity);
+
+        GameObject brick = Instantiate(brickPrefab, transform.position, Quaternion.identity);
+
+        // GameObject brick = Instantiate(brickPrefab, transform.position, Quaternion.identity) as GameObject;
 
         // Get the rigidbody of the brick
         Rigidbody2D brickRigidbody = brick.GetComponent<Rigidbody2D>();
@@ -36,7 +40,7 @@ public class EnemyThrowBrick : MonoBehaviour
         // Apply force to the thrown brick
         if (brickRigidbody != null)
         {
-            brickRigidbody.AddForce(transform.right * throwForce, ForceMode2D.Impulse);
+            brickRigidbody.AddForce(transform.right * throwForce, ForceMode2D.Impulse); // hna ya amir
         }
     }
 }

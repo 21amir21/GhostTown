@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+
+
 using UnityEngine;
 
 public class Punching : MonoBehaviour
 {
+
 
     public KeyCode punchingkey;
     public GameObject boohand;
@@ -16,6 +19,10 @@ public class Punching : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         boohand.SetActive(false);
+    // Start is called before the first frame update
+    void Start()
+    {
+
         
     }
 
@@ -35,5 +42,6 @@ public class Punching : MonoBehaviour
             boohand.SetActive(false);
             punching=false; 
         }
+
     }
 }
