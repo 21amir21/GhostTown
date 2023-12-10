@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    // take damage of the enemy
+    public int health = 10;
+    public float flickerDuration = 0.1f;
+    private float flickerTime = 0f;
+    public SpriteRenderer spriteRenderer;
+
     //VARIABLES FOR ALL ENEMIES SPEED AND DAMAGE //
     public float speed;
     public int damage = 5;
@@ -25,27 +31,24 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    // take damage of the enemy
-    public int health = 3;
-    public float flickerDura1on = 0.1f;
-    private float flickerTime = 0f;
-    public SpriteRenderer spriteRenderer;
 
 
     public void EnemyTakeDamage(int damage)
     {
         // enemy taking damage from whatever ability
-        health = health - damage;
+        health -= damage;
+
+
         // flickering to indicate damage 
-       // SpriteFlicker(sprite);
-       
-        if(health <= 0)
-        {
-            health = 0;
-        }
+        // SpriteFlicker(spriteRenderer);
+
+        //if (health <= 0)
+        //{
+        //    health = 0;
+        //}
 
         // if enemy is dead
-       if (health == 0)
+        if (health == 0)
         {
             Debug.Log("Enemy Finished"); 
             Destroy(gameObject);
@@ -53,18 +56,18 @@ public class EnemyController : MonoBehaviour
     }
 
     //TODO: CHECK IF FLICKERING WORKS ON INHERETED ENEMIES
-    void SpriteFlicker(SpriteRenderer sprite)
-    {
-        if (flickerTime < flickerDura1on)
-        {
-            flickerTime = flickerTime + Time.deltaTime;
-        }
-        else if (flickerTime >= flickerDura1on)
-        {
-            sprite.enabled = !(sprite.enabled);
-            this.flickerTime = 0;
-        }
-    }
+    //void SpriteFlicker(SpriteRenderer sprite)
+    //{
+    //    if (flickerTime < flickerDuration)
+    //    {
+    //        flickerTime = flickerTime + Time.deltaTime;
+    //    }
+    //    else if (flickerTime >= flickerDuration)
+    //    {
+    //        sprite.enabled = !(spriteRenderer.enabled);
+    //        this.flickerTime = 0;
+    //    }
+    //}
 
 
     // Start is called before the first frame update

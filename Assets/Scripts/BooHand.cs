@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BooHand : MonoBehaviour
 {
-    public int damage = 2;
+    public int damage = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
