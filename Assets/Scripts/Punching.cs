@@ -8,13 +8,15 @@ public class Punching : MonoBehaviour
 
     public KeyCode punchingkey;
     public GameObject boohand;
-
+    private Animator animator;
+    private bool punching;
 
     // Start is called before the first frame update
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         boohand.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -23,14 +25,15 @@ public class Punching : MonoBehaviour
         if(Input.GetKeyDown(punchingkey)) { 
 
             boohand.SetActive(true);
-
-            //animation 
+            punching = true;
+            //animation
+            animator.SetBool("punching",punching);
         
         }
         if (Input.GetKeyUp(punchingkey))
         {
             boohand.SetActive(false);
-
+            punching=false; 
         }
     }
 }
