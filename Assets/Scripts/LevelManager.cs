@@ -7,10 +7,12 @@ public class LevelManager : MonoBehaviour
     public GameObject CurrentCheckpoint; //we can update the current checkpoint from within Unity
     public Transform player;
     public Transform Enemy;
+    public int policeKilled=0;
+    public GameObject invBox;
     // Start is called before the first frame update
     void Start()
     {
-        
+        invBox.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,5 +28,13 @@ public class LevelManager : MonoBehaviour
         //player passed through before s/he died ..
         
 
+    }
+    public void PoliceManKilled()
+    {
+        policeKilled++;
+        if (policeKilled >= 2)
+        {
+            invBox.SetActive(true);
+        }
     }
 }
