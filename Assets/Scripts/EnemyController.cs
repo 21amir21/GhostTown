@@ -29,34 +29,39 @@ public class EnemyController : MonoBehaviour
     public int health = 3;
     public float flickerDura1on = 0.1f;
     private float flickerTime = 0f;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
 
     public void EnemyTakeDamage(int damage)
     {
         // enemy taking damage from whatever ability
-        this.health = this.health - damage;
+        health = health - damage;
         // flickering to indicate damage 
-        SpriteFlicker();
+       // SpriteFlicker(sprite);
        
+        if(health <= 0)
+        {
+            health = 0;
+        }
+
         // if enemy is dead
-       if (this.health == 0)
+       if (health == 0)
         {
             Debug.Log("Enemy Finished"); 
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
     //TODO: CHECK IF FLICKERING WORKS ON INHERETED ENEMIES
-    void SpriteFlicker()
+    void SpriteFlicker(SpriteRenderer sprite)
     {
-        if (this.flickerTime < this.flickerDura1on)
+        if (flickerTime < flickerDura1on)
         {
-            this.flickerTime = this.flickerTime + Time.deltaTime;
+            flickerTime = flickerTime + Time.deltaTime;
         }
-        else if (this.flickerTime >= this.flickerDura1on)
+        else if (flickerTime >= flickerDura1on)
         {
-            spriteRenderer.enabled = !(spriteRenderer.enabled);
+            sprite.enabled = !(sprite.enabled);
             this.flickerTime = 0;
         }
     }
