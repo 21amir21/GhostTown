@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FallingRockCheckpoint : MonoBehaviour
 {
-    private float duration=2f;
+    private float duration=3f;
     private float timer = 0f;
     public Transform Rock;
   
