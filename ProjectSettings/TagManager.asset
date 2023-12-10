@@ -4,8 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BrickWall
   - Enemy
+  - Ground
+  - Rotating Platform
+  - BrickWall
+  - SwimPlayer
+  - Corals
+  - Bullet
+  - Bubbles
+  - FishingNet
   layers:
   - Default
   - TransparentFX
