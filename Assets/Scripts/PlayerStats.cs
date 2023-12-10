@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
-    public int health = 600;
+    public int health = 6;
     public int lives = 3;
     public float flickerDura1on = 0.1f;
     private float flickerTime = 0f;
@@ -51,26 +51,8 @@ public class PlayerStats : MonoBehaviour
             }
             Debug.Log("Player Health : " + this.health.ToString());
             Debug.Log("Player Lives : " + this.lives.ToString());
-            PlayHitReac1on();
         }
-        
-    }
-    public void TakeDamageOverTime(int damage)
-    {
-        this.health = this.health - damage;
-        if (this.health < 0f)
-            this.health = 0;
-        if (this.lives > 0f && this.health == 0f)
-        {
-            FindObjectOfType<LevelManager>().RespawnPlayer();
-            this.health = 6;
-            this.lives--;
-        }
-        else if (this.lives == 0 && this.health == 0)
-        {
-            Debug.Log("Gameover"); //add game over splash screen
-            Destroy(this.gameObject);
-        }
+        PlayHitReac1on();
     }
     void PlayHitReac1on()
     {
