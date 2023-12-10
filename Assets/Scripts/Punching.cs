@@ -19,29 +19,31 @@ public class Punching : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         boohand.SetActive(false);
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(punchingkey)) { 
-
-            boohand.SetActive(true);
-            punching = true;
-            //animation
-            animator.SetBool("punching",punching);
-        
-        }
-        if (Input.GetKeyUp(punchingkey))
+        // Start is called before the first frame update
+        void Start()
         {
-            boohand.SetActive(false);
-            punching=false; 
+
+
         }
 
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(punchingkey))
+            {
+
+                boohand.SetActive(true);
+                punching = true;
+                //animation
+                animator.SetBool("punching", punching);
+
+            }
+            if (Input.GetKeyUp(punchingkey))
+            {
+                boohand.SetActive(false);
+                punching = false;
+            }
+
+        }
     }
 }

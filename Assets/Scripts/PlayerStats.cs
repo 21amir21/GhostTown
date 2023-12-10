@@ -54,7 +54,7 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Player Lives : " + this.lives.ToString());
             PlayHitReac1on();
         }
-        
+
     }
     public void TakeDamageOverTime(int damage)
     {
