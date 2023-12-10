@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Enemy
+  - Ground
+  - Rotating Platform
   - BrickWall
+  - SwimPlayer
+  - Corals
   layers:
   - Default
   - TransparentFX
