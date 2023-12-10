@@ -13,9 +13,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - Player
-  - Platform
   - 
+  - Platform
+  - Player
   - 
   - 
   - 
@@ -50,4 +50,10 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 104519309
+    locked: 0
+  - name: Enemies
+    uniqueID: 4182051647
+    locked: 0
+  - name: Player
+    uniqueID: 125416817
     locked: 0
