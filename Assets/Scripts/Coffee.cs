@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coffee : MonoBehaviour
 {
-    public int damage = 1;
+    public int damage = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +16,14 @@ public class Coffee : MonoBehaviour
     {
         
     }
-    void OnCollisionStay2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.collider.tag == "Player")
-        {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            if (other.tag == "Player")
+            {
+                FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            }
+
         }
-
-    }
-
+    
 }
