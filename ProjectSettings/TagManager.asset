@@ -4,9 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Wall
-  - shPlatform
-  - SwimPlayer
   - BrickWall
   layers:
   - Default
