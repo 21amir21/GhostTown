@@ -8,6 +8,7 @@ public class EnemyThrowBrick : MonoBehaviour
     public GameObject brickPrefab;  // Prefab of the brick
     public float throwForce = 10f;  // Force applied to the thrown brick
     public float detectionRange = 10f;  // Range within which the enemy can detect the player
+    public float timer = 2f; // this is to make sure no new bricks are thrown except every 2 sec
 
     void Update()
     {
@@ -25,7 +26,7 @@ public class EnemyThrowBrick : MonoBehaviour
     void ThrowBrick()
     {
         // Instantiate a new brick
-        GameObject brick = Instantiate(brickPrefab, transform.position, Quaternion.identity);
+        GameObject brick = Instantiate(brickPrefab, transform.position,Quaternion.identity);
 
         // Get the rigidbody of the brick
         Rigidbody2D brickRigidbody = brick.GetComponent<Rigidbody2D>();
