@@ -10,6 +10,9 @@ TagManager:
   - BrickWall
   - SwimPlayer
   - Corals
+  - Bullet
+  - Bubbles
+  - FishingNet
   layers:
   - Default
   - TransparentFX
@@ -21,9 +24,9 @@ TagManager:
   - 
   - Platform
   - Player
-  - 
-  - 
-  - 
+  - Sand
+  - Cement
+  - RotatingPlatform
   - 
   - 
   - 
