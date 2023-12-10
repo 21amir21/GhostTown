@@ -19,6 +19,6 @@ public class pCheckpoint : MonoBehaviour
     {
         //if the collider of the object whose name is Sonic GameObject touches the checkPoint's circle collider
         if (Other.tag == "Player")
-            FindObjectOfType<LevelManager>().CurrentCheckpoint = this.gameObject;
+            FindObjectOfType<LevelManager>().currentCheckpoint = gameObject;
     }
 }
