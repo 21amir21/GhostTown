@@ -135,10 +135,10 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	//// used for visualisation in the editor
-	//void OnDrawGizmos() // TODO: Remove later
-	//{
-	//	Gizmos.color = new Color(1, 0, 0, 0.5f);
-	//	Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
-	//}
+	// used for visualisation in the editor
+	void OnDrawGizmos() // TODO: Remove later
+	{
+		Gizmos.color = new Color(1, 0, 0, 0.5f);
+		Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
+	}
 }

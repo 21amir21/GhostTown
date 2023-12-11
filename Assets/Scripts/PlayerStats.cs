@@ -26,7 +26,7 @@ public class PlayerStats : MonoBehaviour
 		if (isImmune == true)
 		{
 			SpriteFlicker();
-			immunityTime = immunityTime + Time.deltaTime;
+			immunityTime +=  Time.deltaTime;
 			if (immunityTime >= immunityDura1on)
 			{
 				isImmune = false;
@@ -45,7 +45,7 @@ public class PlayerStats : MonoBehaviour
 	{
 		if (isImmune == false)
 		{
-			health = health - damage;
+			health -= damage;
 			if (health < 0f)
 				health = 0;
 			if (lives > 0f && health == 0f)
@@ -69,7 +69,7 @@ public class PlayerStats : MonoBehaviour
 	{
 		if (isImmune == false)
 		{
-			health = health - damage;
+			health -= damage;
 			if (health < 0f)
 				health = 0;
 			if (lives > 0f && health == 0f)
@@ -90,7 +90,7 @@ public class PlayerStats : MonoBehaviour
 
 	public void TakeDamageOverTime(int damage) // TODO: remove if not used
 	{
-		health = health - damage;
+		health -= damage;
 		if (health < 0f)
 			health = 0;
 		if (lives > 0f && health == 0f)
@@ -113,7 +113,7 @@ public class PlayerStats : MonoBehaviour
 	{
 		if (flickerTime < flickerDura1on)
 		{
-			flickerTime = flickerTime + Time.deltaTime;
+			flickerTime += Time.deltaTime;
 		}
 		else if (flickerTime >= flickerDura1on)
 		{
