@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     public float speed;
+    public ABShooting player;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        ABShooting player;
+       
 
         player = FindObjectOfType<ABShooting>();
 
