@@ -4,42 +4,34 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-    private GameObject Enemy;
-    private Rigidbody2D rb;
-    public float force;
-    private float timer;
-    public int damage = 1;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        rb = GetComponent<Rigidbody2D>();
-        Enemy = GameObject.FindGameObjectWithTag("Enemy");
-        Vector3 direction = Enemy.transform.position - transform.position;
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+        ABShooting player;
 
-        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
-    }
+        player = FindObjectOfType<ABShooting>();
+
+        if (player.transform.localScale.x < 0)
+        {
+            speed = -speed;
+            transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer > 2)
-        {
-            Destroy(gameObject);
-        }
-        // Your update logic goes here
+        GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
     }
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Enemy"))
-    //    {
-    //        Destroy(gameObject);
-    //        FindObjectOfType<EnemyController>().EnemyTakeDamage(damage);
-    //    }
-    //}
+     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }

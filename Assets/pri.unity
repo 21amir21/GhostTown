@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4900888927734071586, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6677152018903962639, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677152018903962639, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 6886512651996082682, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: m_SleepingMode
       value: 0
@@ -145,6 +157,10 @@ PrefabInstance:
     - target: {fileID: 6886512651996082685, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886512651996082686, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6886512651996082686, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: jumpHeight
@@ -164,11 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6886512651996082687, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.83
+      value: -7.72
       objectReference: {fileID: 0}
     - target: {fileID: 6886512651996082687, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.92
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 6886512651996082687, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -215,6 +231,7 @@ GameObject:
   - component: {fileID: 121761708}
   - component: {fileID: 121761706}
   - component: {fileID: 121761709}
+  - component: {fileID: 121761710}
   m_Layer: 0
   m_Name: priInvisibleBox
   m_TagString: Untagged
@@ -315,6 +332,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.53, y: 0.52}
   m_EdgeRadius: 0
+--- !u!114 &121761710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121761705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5c4369bdd951f47bf38fc35ad32a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invBox: {fileID: 121761705}
+  policeKilled: 0
 --- !u!1 &145382314
 GameObject:
   m_ObjectHideFlags: 1
@@ -426,6 +457,21 @@ MonoBehaviour:
   flickerDura1on: 0.1
   isImmune: 0
   immunityDura1on: 1.5
+--- !u!114 &397248624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397248613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05913e184d2713a41b1fe8171046c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Return: 9
+  firepoint: {fileID: 2099303359}
+  bullet: {fileID: 4877624695725480517, guid: acab44ff1a358a44080b4959b09a4a5b, type: 3}
 --- !u!1001 &485917842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,6 +538,10 @@ PrefabInstance:
     - target: {fileID: 7742658789549137220, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
       propertyPath: m_Name
       value: piloceman_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742658789549137221, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
@@ -666,8 +716,6 @@ MonoBehaviour:
   CurrentCheckpoint: {fileID: 0}
   player: {fileID: 397248618}
   Enemy: {fileID: 0}
-  policeKilled: 0
-  invBox: {fileID: 121761705}
 --- !u!114 &1267250157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,6 +1082,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -179.132, y: -538.18604, z: -180.243}
+--- !u!4 &2099303359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6677152018903962639, guid: 16f9e9c5030644142a6d7ac32da58e25, type: 3}
+  m_PrefabInstance: {fileID: 56805664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7742658789406293654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,6 +1153,10 @@ PrefabInstance:
     - target: {fileID: 7742658789549137220, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
       propertyPath: m_Name
       value: piloceman_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742658789549137221, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd24a1c64e6f26248a8195b29d527805, type: 3}
