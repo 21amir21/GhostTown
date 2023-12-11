@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class WalkingEnemy : EnemyController
 {
+    private SpriteRenderer respawnKey;
+    public Sprite key;
     public float leftLimit;
     public float rightLimit;
-
+    void Start()
+    {
+        respawnKey = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
-       
+       if(health <= 0)
+        {
+            respawnKey.sprite = key;
+            
+        }
     }
 
    void FixedUpdate()

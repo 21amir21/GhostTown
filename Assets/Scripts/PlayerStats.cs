@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+//using System.Diagnostics.Eventing.Reader;
 using System.Net.NetworkInformation;
 using UnityEngine;
+
 public class PlayerStats : MonoBehaviour
 {
-
 
     public int health = 100;
     public int lives = 3;
@@ -14,7 +15,6 @@ public class PlayerStats : MonoBehaviour
     public bool isImmune = false;
     public float immunityDura1on = 1.5f; //el w2t ely sonic 3mal ynor w ytfy
     private float immunityTime = 0f;
-
     // public int coinsCollected = 0;
     void Start()
     {
