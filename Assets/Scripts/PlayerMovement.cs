@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 		else
 			transform.parent = null;
 
-		isOnPlatform = PlatformCheck();
+		PlatformCheck();
 
 		// animation to jump
 		animator.SetBool("grounded", grounded);
