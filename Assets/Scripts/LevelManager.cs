@@ -6,6 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject CurrentCheckpoint; //we can update the current checkpoint from within Unity
     public Transform player;
+
+    // public Transform Enemy;
     public Transform Enemy;
     public int policeKilled=0;
     public GameObject invBox;
@@ -37,4 +39,7 @@ public class LevelManager : MonoBehaviour
             invBox.SetActive(true);
         }
     }
+
+   
+   
 }
