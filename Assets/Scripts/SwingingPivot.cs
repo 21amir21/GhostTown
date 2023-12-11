@@ -4,30 +4,13 @@ using UnityEngine;
 
 public class SwingingPivot : MonoBehaviour
 {
-	HingeJoint2D joint;
-	JointMotor2D temp;
-
-	// Start is called before the first frame update
-	void Start()
-	{
-		joint = GetComponent<HingeJoint2D>();
-		temp = joint.motor;
-		Debug.Log(joint.limits.max); // TODO: Patrick Remove
-	}
+	private float maxAngle = 40;
+	private float speed = 1;
 
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		// TODO: Patrick Make it like a pendulum
-		if (joint.limitState == JointLimitState2D.LowerLimit && temp.motorSpeed < 0)
-		{
-			temp.motorSpeed = -temp.motorSpeed;
-			joint.motor = temp;
-		}
-		if (joint.limitState == JointLimitState2D.UpperLimit && temp.motorSpeed > 0)
-		{
-			temp.motorSpeed = -temp.motorSpeed;
-			joint.motor = temp;
-		}
+		float angle = maxAngle * Mathf.Sin(Time.time * speed);
+		transform.localRotation = Quaternion.Euler(0, 0, angle);
 	}
 }

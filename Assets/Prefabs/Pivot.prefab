@@ -253,7 +253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7786461187085234473}
   - component: {fileID: 7786461187085234475}
-  - component: {fileID: 7786461187085234474}
   - component: {fileID: 7786461187085234468}
   m_Layer: 0
   m_Name: Pivot
@@ -299,30 +298,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &7786461187085234474
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7786461187085234472}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 12.3, y: 2.98}
-  m_UseMotor: 1
-  m_Motor:
-    m_MotorSpeed: 30
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: -40
-    m_UpperAngle: 40
 --- !u!114 &7786461187085234468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,3 +310,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe448b150aee2ab4496a4f95dc68a001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 40

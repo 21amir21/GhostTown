@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
 		else if (sandHit != null)
 		{
 			isOnPlatform = false; // we don't want them to jump if they are on sand
-			rigidBody.drag = 5; // slows down the player as if they are walking on sand
+			rigidBody.drag = 10; // slows down the player as if they are walking on sand
 		}
 		else
 		{
@@ -129,16 +129,16 @@ public class PlayerMovement : MonoBehaviour
 			rigidBody.drag = 0; // resets drag as it was changed from sand
 			rigidBody.gravityScale = 1; // resets gravity as it was changed from rotating platform
 			rigidBody.freezeRotation = true; // freezes z rotation as it was unfrozen from rotating platform
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1f); // resets the rotation of the player from rotating platform
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1.5f); // resets the rotation of the player from rotating platform
 			rotatingPlatform = null;
 			platform = null;
 		}
 	}
 
-	//// used for visualisation in the editor
-	//void OnDrawGizmos() // TODO: Remove later
-	//{
-	//	Gizmos.color = new Color(1, 0, 0, 0.5f);
-	//	Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
-	//}
+	// used for visualisation in the editor
+	void OnDrawGizmos() // TODO: Remove later
+	{
+		Gizmos.color = new Color(1, 0, 0, 0.5f);
+		Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
+	}
 }
