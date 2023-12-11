@@ -8,16 +8,17 @@ public class ABShooting : MonoBehaviour
     public KeyCode Return;
     public Transform firepoint;
     public GameObject bullet;
+    private bool shootingAbilityEnabled = false;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    
+// Update is called once per frame
+void Update()
     {
-        if (Input.GetKeyDown(Return))
+        if (shootingAbilityEnabled && Input.GetKeyDown(Return))
         {
             Shooting();
         }   
@@ -26,4 +27,14 @@ public class ABShooting : MonoBehaviour
     {
         Instantiate(bullet, firepoint.position, firepoint.rotation);
     }
+
+
+    public void EnableShootingAbility()
+    {
+        shootingAbilityEnabled = true;
+        Debug.Log("shootingAbilityEnabled = true;");
+    }
+
+
+
 }

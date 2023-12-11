@@ -62,8 +62,6 @@ public class priChasingEnemy : MonoBehaviour
         if (other.collider.CompareTag("Player"))
         {
             FindObjectOfType<PlayerStats>().TakeDamage(damage);
-
-           
-        }   
+        }
     }
 }
