@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 6886512651996082685}
   - component: {fileID: 6886512651996082682}
   - component: {fileID: 6886512651996082686}
-  - component: {fileID: 946690037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,39 +153,16 @@ MonoBehaviour:
   upArrow: 273
   leftArrow: 276
   rightArrow: 275
-  colliderCheck: {fileID: 6886512652538666474}
-  checkArea: {x: 0, y: 0}
+  groundCheck: {fileID: 6886512652538666474}
+  groundCheckRadius: 0.2
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  platformCheckCircle: {fileID: 6886512652538666474}
   platform: {fileID: 0}
-  rotatingPlatform: {fileID: 0}
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  rotatingPlatformLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  sandLayerMask:
-    serializedVersion: 2
-    m_Bits: 1024
---- !u!114 &946690037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886512651996082683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d301aec34a01305479aac299f1e11f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  lives: 3
-  flickerDura1on: 0.1
-  isImmune: 0
-  immunityDura1on: 1.5
 --- !u!1 &6886512652538666475
 GameObject:
   m_ObjectHideFlags: 0
