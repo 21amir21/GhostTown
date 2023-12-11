@@ -762,6 +762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125b34b50f808143a773049a9f658e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
+  flickerDuration: 0.1
+  spriteRenderer: {fileID: 0}
   speed: 2
   damage: 5
   isFacingRight: 1
@@ -834,8 +837,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -589787693
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8329fbc13b9c60419124f2a0afa2b75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1041,6 +1044,8 @@ MonoBehaviour:
   CurrentCheckpoint: {fileID: 1347843762}
   player: {fileID: 677580177}
   Enemy: {fileID: 0}
+  policeKilled: 0
+  invBox: {fileID: 0}
 --- !u!1001 &789300871
 PrefabInstance:
   m_ObjectHideFlags: 0
