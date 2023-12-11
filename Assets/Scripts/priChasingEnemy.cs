@@ -8,7 +8,7 @@ public class priChasingEnemy : MonoBehaviour
     public float detectionRange = 5f;
     public Transform bulletpos;
     public GameObject bulletPrefab;
-
+    
     private float timer;
     private Transform player;
     private Rigidbody2D rb;
@@ -17,7 +17,7 @@ public class priChasingEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -25,8 +25,8 @@ public class priChasingEnemy : MonoBehaviour
     void Update()
     {
 
-        timer += Time.deltaTime;
-
+        timer+=Time.deltaTime;
+        
         if (player != null)
         {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -38,8 +38,7 @@ public class priChasingEnemy : MonoBehaviour
                 // Move towards the player
                 Vector2 direction = (player.position - transform.position).normalized;
                 rb.velocity = direction * moveSpeed;
-                if (timer > 2)
-                {
+                if (timer > 2) {
                     timer = 0;
                     Shoot();
                 }
@@ -52,10 +51,10 @@ public class priChasingEnemy : MonoBehaviour
         }
     }
 
-
-    void Shoot()
+   
+     void Shoot()
     {
-        Instantiate(bulletPrefab, bulletpos.position, Quaternion.identity);
+            Instantiate(bulletPrefab, bulletpos.position, Quaternion.identity);
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -64,7 +63,7 @@ public class priChasingEnemy : MonoBehaviour
         {
             FindObjectOfType<PlayerStats>().TakeDamage(damage);
         }
-
+        
     }
 
 }
