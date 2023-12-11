@@ -33,7 +33,11 @@ public class JellyFishController : SwimEnemyController
             FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
             Flip();
         }
+<<<<<<< Updated upstream
         else if (other.tag == "Corals")
+=======
+        else if (other.tag == "shPlatform")
+>>>>>>> Stashed changes
         {
             Flip();
         }
