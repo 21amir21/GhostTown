@@ -14,7 +14,6 @@ TagManager:
   - Bubbles
   - FishingNet
   - Wall
-
   layers:
   - Default
   - TransparentFX
