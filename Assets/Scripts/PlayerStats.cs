@@ -4,8 +4,6 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
-
-
     public int health = 100;
     public int lives = 3;
     public float flickerDura1on = 0.1f;
@@ -56,7 +54,7 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Player Lives : " + this.lives.ToString());
             PlayHitReac1on();
         }
-
+        
     }
     public void TakeDamageOverTime(int damage)
     {
