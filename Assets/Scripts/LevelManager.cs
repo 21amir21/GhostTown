@@ -1,37 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject CurrentCheckpoint; //we can update the current checkpoint from within Unity
-    public Transform player;
+	public Transform currentCheckpoint; // we can update the current checkpoint from within Unity
+	public Transform player;
+	public Transform enemy; // TODO: Patrick why is this here?
+	public int policeKilled=0;
+	public GameObject invBox;
 
-    // public Transform Enemy;
-    public Transform Enemy;
-    public int policeKilled=0;
-    public GameObject invBox;
-    // Start is called before the first frame update
-    void Start()
-    {
-        invBox.SetActive(false);
-    }
+	// Start is called before the first frame update
+	void Start()
+	{
+		currentCheckpoint = player.transform;
+    	invBox.SetActive(false);
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void RespawnPlayer()
-    {
-        FindObjectOfType<PlayerMovement>().transform.position = CurrentCheckpoint.transform.position;
-        //Search for the asset/object called Controller (ur player's script code name whatever it is).
-        //once u've found it, change its player game object's position to be at the last checkpoint the
-        //player passed through before s/he died ..
-        
+	[Obsolete("Use RestartScene instead unless you actually mean to use respawn")]
+	public void RespawnPlayer()
+	{
+		FindObjectOfType<PlayerMovement>().transform.position = currentCheckpoint.position;
+		//Search for the asset/object called Controller (ur player's script code name whatever it is).
+		//once u've found it, change its player game object's position to be at the last checkpoint the
+		//player passed through before s/he died ..
+	}
 
-    }
-    public void PoliceManKilled()
+	public void RestartScene()
+	{
+		// reloads the scene to reset everything that was changed
+		// params are string which is the name of the scene so it restarts the scene that is currently active
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+  
+  public void PoliceManKilled()
     {
         policeKilled++;
         if (policeKilled >= 2)
@@ -39,7 +43,3 @@ public class LevelManager : MonoBehaviour
             invBox.SetActive(true);
         }
     }
-
-   
-   
-}
