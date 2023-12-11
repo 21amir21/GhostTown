@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
-public class PoliceScene1to2 : MonoBehaviour
+public class ventSpawn : MonoBehaviour
 {
-    private SpriteRenderer door;
-    public Sprite openDoor;
+    private SpriteRenderer vent;
+    public Sprite openVent;
     // Start is called before the first frame update
     void Start()
     {
-        door = GetComponent<SpriteRenderer>();
+        vent = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -19,14 +18,11 @@ public class PoliceScene1to2 : MonoBehaviour
         
     }
 
-   
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if(other.tag == "Player")
         {
-            door.sprite = openDoor;
-            //switch scenes
-            
+            vent.sprite = openVent; 
         }
     }
 }
