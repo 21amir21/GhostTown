@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class PlayerStats : MonoBehaviour
 		if (isImmune == true)
 		{
 			SpriteFlicker();
-			immunityTime = immunityTime + Time.deltaTime;
+			immunityTime += Time.deltaTime;
 			if (immunityTime >= immunityDura1on)
 			{
 				isImmune = false;
@@ -45,7 +46,7 @@ public class PlayerStats : MonoBehaviour
 	{
 		if (isImmune == false)
 		{
-			health = health - damage;
+			health -= damage;
 			if (health < 0f)
 				health = 0;
 			if (lives > 0f && health == 0f)

@@ -9,17 +9,20 @@ public class LevelManager : MonoBehaviour
 	public Transform currentCheckpoint; // we can update the current checkpoint from within Unity
 	public Transform player;
 	public Transform enemy; // TODO: Patrick why is this here?
+	public int policeKilled=0;
+	public GameObject invBox;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		currentCheckpoint = player.transform;
+    	invBox.SetActive(false);
 	}
 
 	[Obsolete("Use RestartScene instead unless you actually mean to use respawn")]
 	public void RespawnPlayer()
 	{
-		FindObjectOfType<PlayerMovement>().transform.position = currentCheckpoint.transform.position;
+		FindObjectOfType<PlayerMovement>().transform.position = currentCheckpoint.position;
 		//Search for the asset/object called Controller (ur player's script code name whatever it is).
 		//once u've found it, change its player game object's position to be at the last checkpoint the
 		//player passed through before s/he died ..
@@ -31,4 +34,12 @@ public class LevelManager : MonoBehaviour
 		// params are string which is the name of the scene so it restarts the scene that is currently active
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
-}
+  
+  public void PoliceManKilled()
+    {
+        policeKilled++;
+        if (policeKilled >= 2)
+        {
+            invBox.SetActive(true);
+        }
+    }

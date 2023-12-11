@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	// Animation 
+	private Animator animator; 
+
 	public float moveSpeed, jumpHeight;
 	public float actualMoveSpeed; // TODO: Patrick public for testing
 
@@ -39,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 		platform = null;
 		rotatingPlatform = null;
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
+        animator = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -54,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
 			{
 				sprite.flipX = false; // faces right
 			}
+
+
 		}
 		if (Input.GetKey(leftArrow))
 		{
@@ -63,12 +69,15 @@ public class PlayerMovement : MonoBehaviour
 			{
 				sprite.flipX = true; // faces left
 			}
+
+
 		}
 		// if player presses up arrow key and is grounded then jumps
 		if (Input.GetKey(upArrow) && (grounded || isOnPlatform))
 		{
 			rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpHeight);
-		}
+
+        }
 		// when they release the up arrow key stops all vertical
 		// velocity and starts droping, if the player wasn't already droping
 		else if (Input.GetKeyUp(upArrow) && rigidBody.velocity.y > 0)
@@ -81,7 +90,12 @@ public class PlayerMovement : MonoBehaviour
 			transform.parent = platform;
 		else
 			transform.parent = null;
-	}
+
+        // animation to jump
+        animator.SetBool("grounded", grounded);
+        // walking animation
+        animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
+    }
 
 	// used for the execution of commands
 	private void FixedUpdate()
@@ -135,10 +149,10 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	//// used for visualisation in the editor
-	//void OnDrawGizmos() // TODO: Remove later
-	//{
-	//	Gizmos.color = new Color(1, 0, 0, 0.5f);
-	//	Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
-	//}
+	// used for visualisation in the editor
+	void OnDrawGizmos() // TODO: Remove later
+	{
+		Gizmos.color = new Color(1, 0, 0, 0.5f);
+		Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
+	}
 }
