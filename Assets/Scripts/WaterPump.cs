@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class WaterPump : MonoBehaviour
 {
-    public GameObject obj;
+    public GameObject lid;
+    public GameObject pump;
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if player has the lid
         if (FindObjectOfType<SwimmingMovement>().hasLid==true)
         {
+            
             //TODO: make lid cover pump
-
+            lid.transform.position = new Vector3(pump.transform.position.x - lid.GetComponent<BoxCollider2D>().size.x, pump.transform.position.y, pump.transform.position.z);
+            lid.transform.parent = pump.transform;
             //make water bubbles dissapear and allow player to pass by
-            obj.GetComponent<BoxCollider2D>().enabled = false;
-            obj.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.SetActive(false);
         }
     }
     // Start is called before the first frame update
