@@ -17,6 +17,7 @@ public class priChasingEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -51,7 +52,7 @@ public class priChasingEnemy : MonoBehaviour
     }
 
    
-     public void Shoot()
+     void Shoot()
     {
             Instantiate(bulletPrefab, bulletpos.position, Quaternion.identity);
     }
@@ -62,7 +63,7 @@ public class priChasingEnemy : MonoBehaviour
         {
             FindObjectOfType<PlayerStats>().TakeDamage(damage);
         }
+        
     }
-
 
 }
