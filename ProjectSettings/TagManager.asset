@@ -13,6 +13,7 @@ TagManager:
   - Bullet
   - Bubbles
   - FishingNet
+  - Wall
   layers:
   - Default
   - TransparentFX

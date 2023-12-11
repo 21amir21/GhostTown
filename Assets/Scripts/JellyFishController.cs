@@ -28,12 +28,12 @@ public class JellyFishController : SwimEnemyController
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "SwimPlayer")
         {
             FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
             Flip();
         }
-        else if (other.tag == "Wall")
+        else if (other.tag == "Corals")
         {
             Flip();
         }

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6886512651996082685}
   - component: {fileID: 6886512651996082682}
   - component: {fileID: 6886512651996082686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,22 +153,16 @@ MonoBehaviour:
   upArrow: 273
   leftArrow: 276
   rightArrow: 275
-  colliderCheck: {fileID: 6886512652538666474}
-  checkArea: {x: 0, y: 0}
+  groundCheck: {fileID: 6886512652538666474}
+  groundCheckRadius: 0.2
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  platformCheckCircle: {fileID: 6886512652538666474}
   platform: {fileID: 0}
-  rotatingPlatform: {fileID: 0}
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  rotatingPlatformLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  sandLayerMask:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &6886512652538666475
 GameObject:
   m_ObjectHideFlags: 0

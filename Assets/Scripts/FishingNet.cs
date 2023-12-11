@@ -5,8 +5,10 @@ using UnityEngine;
 public class FishingNet : MonoBehaviour
 {
     private int hitCount = 0;
-    public Sprite tornNet;
-    private SpriteRenderer spriteRenderer;
+    public GameObject torn;
+    public Transform crab;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,38 +24,31 @@ public class FishingNet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hitCount++;
-        if (collision.tag == "Player")
+        if (collision.tag == "SwimPlayer")
         {
+            hitCount++;
             //if player aquired crab
             if (FindObjectOfType<SwimmingMovement>().aquiredCrab)
             {
-                gameObject.GetComponent<SpriteRenderer>().sprite = tornNet;
-                gameObject.GetComponent<EdgeCollider2D>().enabled = false;
+                gameObject.SetActive(false);
+                torn.SetActive(true);
+                FindObjectOfType<Crab>().inActivateCrab();
+               
             }
             //if crab was not yet aquired and this is the first time player collides with net
+            //TODO: spawn the crab
             else if (FindObjectOfType<SwimmingMovement>().aquiredCrab == false && hitCount == 1)
             {
+                crab.gameObject.SetActive(true);
+                FindObjectOfType<LevelManager>().RespawnEnemy();
+                //TODO: Make camera zoom on crab and pause play
+                //while (Time.deltaTime < 5)
+                //{
+                //FindObjectOfType<CameraFollowPri>().Target=crab;
 
+                //}
             }
         }
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    hitCount++;
-    //    if(collision.collider.tag == "Player")
-    //    {
-    //        //if player aquired crab
-    //        if(GetComponent<SwimmingMovement>().aquiredCrab == true)
-    //        {
-    //            //this.GetComponent<SpriteRenderer>().sprite = tornNet;
-    //        }
-    //        //if crab was not yet aquired and this is the first time player collides with net
-    //        else if(GetComponent<SwimmingMovement>().aquiredCrab == false && hitCount ==1)
-    //        {
-
-    //        }
-    //    }
-    //}
 }

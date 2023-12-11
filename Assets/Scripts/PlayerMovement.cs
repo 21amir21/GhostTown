@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	// Animation 
+	private Animator animator; 
+
 	public float moveSpeed, jumpHeight;
-	public float actualMoveSpeed; // TODO: Patrick public for testing
+	public float actualMoveSpeed; // TODO: public for testing
 
 	private Rigidbody2D rigidBody;
 	private SpriteRenderer sprite;
@@ -38,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
 		rotatingPlatform = null;
+		animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
 	}
 
@@ -81,6 +85,13 @@ public class PlayerMovement : MonoBehaviour
 			transform.parent = platform;
 		else
 			transform.parent = null;
+
+		isOnPlatform = PlatformCheck();
+
+		// animation to jump
+		animator.SetBool("grounded", grounded);
+		// walking animation
+		animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
 	}
 
 	// used for the execution of commands
@@ -133,7 +144,6 @@ public class PlayerMovement : MonoBehaviour
 			rotatingPlatform = null;
 			platform = null;
 		}
-	}
 
 	// used for visualisation in the editor
 	void OnDrawGizmos() // TODO: Remove later
