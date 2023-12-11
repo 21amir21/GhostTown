@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	// Animation 
+	private Animator animator; 
+
 	public float moveSpeed, jumpHeight;
 	public float actualMoveSpeed; // TODO: public for testing
 
@@ -30,7 +33,8 @@ public class PlayerMovement : MonoBehaviour
 	{
 		rigidBody = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
-		platform = null;
+        animator = GetComponent<Animator>();
+        platform = null;
 	}
 
 	// Update is called once per frame
@@ -46,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
 			{
 				sprite.flipX = false; // faces right
 			}
+
+
 		}
 		if (Input.GetKey(leftArrow))
 		{
@@ -55,12 +61,15 @@ public class PlayerMovement : MonoBehaviour
 			{
 				sprite.flipX = true; // faces left
 			}
+
+
 		}
 		// if player presses up arrow key and is grounded then jumps
 		if (Input.GetKey(upArrow) && (grounded || isOnPlatform))
 		{
 			rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpHeight);
-		}
+
+        }
 		// when they release the up arrow key stops all vertical
 		// velocity and starts droping, if the player wasn't already droping
 		else if (Input.GetKeyUp(upArrow) && rigidBody.velocity.y > 0)
@@ -75,7 +84,12 @@ public class PlayerMovement : MonoBehaviour
 			transform.parent = null;
 
 		isOnPlatform = PlatformCheck();
-	}
+
+            // animation to jump
+            animator.SetBool("grounded", grounded);
+        // walking animation
+        animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
+    }
 
 	// used for the execution of commands
 	private void FixedUpdate()

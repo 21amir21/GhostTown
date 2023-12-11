@@ -6,6 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject CurrentCheckpoint; //we can update the current checkpoint from within Unity
     public Transform player;
+
+    // public Transform Enemy;
     public Transform Enemy;
     
     // Start is called before the first frame update
@@ -28,5 +30,20 @@ public class LevelManager : MonoBehaviour
         
 
     }
-    
+
+
+    public void RespawnEnemy()
+    {
+        Instantiate(Enemy, rock.transform.position, rock.transform.rotation);
+
+    }
+    public void PoliceManKilled()
+    {
+        policeKilled++;
+        if (policeKilled >= 2)
+        {
+            invBox.SetActive(true);
+        }
+    }
+
 }
