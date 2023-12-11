@@ -10,11 +10,7 @@ public class Lid : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if player gets in contact with lid
-<<<<<<< Updated upstream
         if (collision.collider.tag == "SwimPlayer" && count==0)
-=======
-        if (collision.collider.tag == "SwimPlayer")
->>>>>>> Stashed changes
         {
             count++;
             FindObjectOfType<SwimmingMovement>().hasLid = true;
