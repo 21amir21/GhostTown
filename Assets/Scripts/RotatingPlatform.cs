@@ -6,13 +6,13 @@ public class RotatingPlatform : MonoBehaviour
 {
 	public bool isPLayerColliding = false;
 	private Quaternion defultRotation;
-	private Rigidbody2D rigidbody;
+	private Rigidbody2D rigidBody;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		defultRotation = Quaternion.identity;
-		rigidbody = GetComponent<Rigidbody2D>();
+		rigidBody = GetComponent<Rigidbody2D>();
 	}
 
 	// Update is called once per frame
@@ -38,7 +38,7 @@ public class RotatingPlatform : MonoBehaviour
 		if (collision.collider.tag == "Player")
 		{
 			isPLayerColliding = false;
-			rigidbody.angularVelocity = 0;
+			rigidBody.angularVelocity = 0;
 			FindObjectOfType<PlayerMovement>().rotatingPlatform = null;
 			Debug.Log("ih");
 		}

@@ -8,7 +8,7 @@ public class SwingingRing : MonoBehaviour
 	{
 		if (collision.collider.tag == "Player")
 		{
-			//TODO: Patrick take damage
+			FindObjectOfType<PlayerStats>().TakeDamageAndDie(10);
 		}
 	}
 }
