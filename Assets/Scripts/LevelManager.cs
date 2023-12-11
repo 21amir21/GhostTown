@@ -9,16 +9,11 @@ public class LevelManager : MonoBehaviour
 
     // public Transform Enemy;
     public Transform Enemy;
-
-    public GameObject rock;
-
-    public int policeKilled = 0;
-    public GameObject invBox;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        invBox.SetActive(false);
+        
     }
 
     // Update is called once per frame
