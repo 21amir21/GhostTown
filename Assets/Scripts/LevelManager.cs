@@ -9,8 +9,12 @@ public class LevelManager : MonoBehaviour
 
     // public Transform Enemy;
     public Transform Enemy;
-    public int policeKilled=0;
+
+    public GameObject rock;
+
+    public int policeKilled = 0;
     public GameObject invBox;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,13 @@ public class LevelManager : MonoBehaviour
         
 
     }
+
+
+    public void RespawnEnemy()
+    {
+        Instantiate(Enemy, rock.transform.position, rock.transform.rotation);
+
+    }
     public void PoliceManKilled()
     {
         policeKilled++;
@@ -40,6 +51,4 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-   
-   
 }

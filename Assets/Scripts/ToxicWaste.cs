@@ -17,7 +17,7 @@ public class ToxicWaste : SwimEnemyController
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "SwimPlayer")
         {
             FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
             // FindObjectOfType<LevelManager>().RespawnPlayer();
