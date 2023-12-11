@@ -4,27 +4,55 @@ using UnityEngine;
 
 public class VerticalPlatform : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float minY = 0f;
-    public float maxY = 5f;
+    Vector3 startingPosition;
+    public float maxTop, maxBottom, speed;
+    private float currentX;
+    bool hasReachedBottom;
 
-    private int direction = 1; // 1 for up, -1 for down
+    // Start is called before the first frame update
+    void Start()
+    {
+        startingPosition = transform.position; // initialises starting position with the position of the platform at the start
+        currentX = startingPosition.x;
+    }
 
+    // Update is called once per frame
     void Update()
     {
-        // Move the platform vertically
-        transform.Translate(Vector3.up * direction * moveSpeed * Time.deltaTime);
 
-        // Check if the platform reached the upper or lower bounds
-        if (transform.position.y >= maxY)
+    }
+
+    private void FixedUpdate()
+    {
+        if (hasReachedBottom) // reached min height
         {
-            direction = -1; // Change direction to move down
+            if (transform.position.y < maxTop - 0.1f) // still not yet at the max height
+            {
+                Vector2 finalPosition = new Vector2(currentX, maxTop);
+                Move(finalPosition);
+            }
+            else // reached max height
+            {
+                hasReachedBottom = false;
+            }
         }
-        else if (transform.position.y <= minY)
+        else // reached max height
         {
-            direction = 1; // Change direction to move up
+            if (transform.position.y > maxBottom + 0.1f) // still not yet at the min height
+            {
+                Vector2 finalPosition = new Vector2(currentX, maxBottom);
+                Move(finalPosition);
+            }
+            else // reached min height
+            {
+                hasReachedBottom = true;
+            }
         }
     }
+
+    private void Move(Vector2 finalPosition)
+    {
+        // similar to Lerp but makes the movement a constant speed instead of slowing down as it gets closer to the final position
+        transform.position = Vector2.MoveTowards(transform.position, finalPosition, speed * Time.deltaTime);
+    }
 }
-
-
