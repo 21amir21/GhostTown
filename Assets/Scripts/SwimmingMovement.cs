@@ -14,6 +14,7 @@ public class SwimmingMovement : MonoBehaviour
     private bool isFacingDown;
     public bool aquiredCrab;
     public bool hasLid;
+    public bool isFacingRight = true;
 
     //private Animator anim;
 
@@ -43,23 +44,26 @@ public class SwimmingMovement : MonoBehaviour
 
         if (Input.GetKey(up) && Input.GetKey(R))
         {
+            isFacingRight = true;
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, moveSpeed);
         }
         else if(Input.GetKey(up) && Input.GetKey(L))
         {
+            isFacingRight = false;
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, moveSpeed);
         }
         else if (Input.GetKey(down) && Input.GetKey(L))
         {
+            isFacingRight = false;
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, -moveSpeed);
         }
         else if (Input.GetKey(down) && Input.GetKey(R))
         {
+            isFacingRight = true;
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, -moveSpeed);
         }
         else if (Input.GetKey(up))
         {
-           
             isFacingDown = false;
             rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
             
@@ -88,7 +92,7 @@ public class SwimmingMovement : MonoBehaviour
         }
         else if (Input.GetKey(L))
         {
-           
+            isFacingRight = false;
             //if character was swimming down
             if (isFacingDown == true)
             {
@@ -109,7 +113,7 @@ public class SwimmingMovement : MonoBehaviour
         }
         else if (Input.GetKey(R))
         {
-            
+            isFacingRight = true;
             if (isFacingDown == true)
             {
                 //flip it upwards

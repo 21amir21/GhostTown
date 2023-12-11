@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     public GameObject CurrentCheckpoint; //we can update the current checkpoint from within Unity
     public Transform player;
     public Transform Enemy;
+    public GameObject rock;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +25,11 @@ public class LevelManager : MonoBehaviour
         //Search for the asset/object called Controller (ur player's script code name whatever it is).
         //once u've found it, change its player game object's position to be at the last checkpoint the
         //player passed through before s/he died ..
+    }
+
+    public void RespawnEnemy()
+    {
+        Instantiate(Enemy, rock.transform.position, rock.transform.rotation);
+
     }
 }
