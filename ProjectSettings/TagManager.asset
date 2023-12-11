@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< Updated upstream
   - Enemy
   - Ground
   - Rotating Platform
@@ -15,10 +14,7 @@ TagManager:
   - Bubbles
   - FishingNet
   - Wall
-=======
-  - SwimPlayer
-  - Corals
->>>>>>> Stashed changes
+
   layers:
   - Default
   - TransparentFX
@@ -30,9 +26,9 @@ TagManager:
   - 
   - Platform
   - Player
-  - 
-  - 
-  - 
+  - Sand
+  - Cement
+  - RotatingPlatform
   - 
   - 
   - 
