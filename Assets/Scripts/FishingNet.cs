@@ -24,9 +24,9 @@ public class FishingNet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "SwimPlayer" )
-            hitCount++;
+        if (collision.tag == "SwimPlayer")
         {
+            hitCount++;
             //if player aquired crab
             if (FindObjectOfType<SwimmingMovement>().aquiredCrab)
             {
