@@ -14,12 +14,12 @@ public class DonutsPolice : EnemyController
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
-        {
-            FindObjectOfType<ABShooting>().EnableShootingAbility();
-        }
+        
     }
 
-   
+    private void OnDestroy()
+    {
+        FindObjectOfType<ABShooting>().EnableShootingAbility();
+    }
 
 }

@@ -11,16 +11,24 @@ public class PlayerBullet : MonoBehaviour
     void Start()
     {
 
-       
-
         player = FindObjectOfType<ABShooting>();
 
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (player.transform.localScale.x < 0)
         {
-            speed = -speed;
+            // Adjust the speed based on player's scale
+            speed = -Mathf.Abs(speed);
             transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+
+            // Set the velocity directly based on adjusted speed
+            rb.velocity = new Vector2(speed, rb.velocity.y);
         }
-     }
+        else
+        {
+            // Set the velocity directly based on original speed
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+        }
+    }
 
     // Update is called once per frame
     void Update()

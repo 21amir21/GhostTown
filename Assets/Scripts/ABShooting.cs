@@ -18,7 +18,7 @@ public class ABShooting : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
-        if (shootingAbilityEnabled && Input.GetKeyDown(Return))
+        if (shootingAbilityEnabled==true && Input.GetKeyDown(Return))
         {
             Shooting();
         }   
