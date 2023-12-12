@@ -8,13 +8,13 @@ public class EnemyController : MonoBehaviour
     public int health = 10;
     public float flickerDuration = 0.1f;
     private float flickerTime = 0f;
-    public SpriteRenderer spriteRenderer;
+    //public SpriteRenderer spriteRenderer;
 
     //VARIABLES FOR ALL ENEMIES SPEED AND DAMAGE //
     public float speed;
     public int damage = 5;
     public bool isFacingRight = false;
-
+    public bool isPoliceWithKey = false;
     // this is to trigger the damage function for the player//
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -69,6 +69,7 @@ public class EnemyController : MonoBehaviour
     //    }
     //}
 
+   
 
     // Start is called before the first frame update
     void Start()

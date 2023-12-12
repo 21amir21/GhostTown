@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
 	public LayerMask platformLayerMask;
 	private bool isOnPlatform = false;
 
+	public bool aquiredKey = false;
+
 	// Start is called before the first frame update
 	void Start()
 	{

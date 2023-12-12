@@ -18,12 +18,13 @@ public class PoliceScene1to3 : MonoBehaviour
         
     }
 
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.tag == "Player")
-    //    {
-    //        door.sprite = openDoor;
-    //        //go to police scene 3
-    //    }
-    //}
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            FindObjectOfType<RespawnKey>().inActivateKey();
+            door.sprite = openDoor;
+            //go to police scene 3
+        }
+    }
 }
