@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/PoliceSprites/doorLocked.png.meta
 guid: 8042308879f87f149bdbd2436642bfa8
+========
+guid: 4fee6df74a99f4f47ba48a576a0f5bef
+>>>>>>>> 228d270be2423a120c674ceeb181336d5d3f34c2:Assets/Sprites/ConstructionBackground.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

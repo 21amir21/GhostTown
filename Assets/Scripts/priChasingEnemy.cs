@@ -1,13 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class priChasingEnemy : MonoBehaviour
+public class priChasingEnemy : EnemyController
 {
-    public int damage = 1;
+    static int policemenkilled=0;
     public float moveSpeed = 3f;
     public float detectionRange = 5f;
     public Transform bulletpos;
     public GameObject bulletPrefab;
+    public GameObject invisibleBox;
     
     private float timer;
     private Transform player;
@@ -16,17 +17,16 @@ public class priChasingEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        damage = 1;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
 
-        timer+=Time.deltaTime;
-        
         if (player != null)
         {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -34,11 +34,24 @@ public class priChasingEnemy : MonoBehaviour
             // Check if the player is within the detection range
             if (distanceToPlayer <= detectionRange)
             {
-                timer += Time.deltaTime;
                 // Move towards the player
                 Vector2 direction = (player.position - transform.position).normalized;
                 rb.velocity = direction * moveSpeed;
-                if (timer > 2) {
+
+                // Flip the enemy sprite based on player position
+                if (player.position.x > transform.position.x)
+                {
+                    // Player is on the right side of the enemy
+                    transform.localScale = new Vector3(-3.2897f, 3.0096f, 1); // Flip the sprite
+                }
+                //else
+                //{
+                //    // Player is on the left side of the enemy
+                //    //transform.localScale = new Vector3(1f, 1f, 1f); // Reset the sprite scale
+                //}
+
+                if (timer > 2)
+                {
                     timer = 0;
                     Shoot();
                 }
@@ -51,19 +64,24 @@ public class priChasingEnemy : MonoBehaviour
         }
     }
 
-   
-     void Shoot()
+
+
+    void Shoot()
     {
             Instantiate(bulletPrefab, bulletpos.position, Quaternion.identity);
     }
 
-    void OnCollisionStay2D(Collision2D other)
+    
+    private void OnDestroy()
     {
-        if (other.collider.CompareTag("Player"))
+        Debug.Log("ondestroy fel prichasing working fol");
+        policemenkilled++;
+        if (policemenkilled >= 2)
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
-        }
-        
-    }
+            Debug.Log("update bta3 ivBox 48al");
+           
+            invisibleBox.SetActive(true);
 
+        }
+    }
 }
