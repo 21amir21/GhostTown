@@ -19,15 +19,7 @@ public class PoliceScene1to2 : MonoBehaviour
         
     }
 
-    //void OnCollisionEnter2D(Collision2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Player"))
-    //    {
-    //        door.sprite = openDoor;
-    //        //switch scenes
-
-    //    }
-    //}
+   
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

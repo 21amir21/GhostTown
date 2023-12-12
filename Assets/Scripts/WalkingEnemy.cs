@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class WalkingEnemy : EnemyController
 {
+   
     public float leftLimit;
     public float rightLimit;
-
+    void Start()
+    {
+    }
     void Update()
     {
-       
+      
     }
 
    void FixedUpdate()

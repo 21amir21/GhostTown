@@ -43,7 +43,6 @@ public class FishingNet : MonoBehaviour
             {
                 crab.gameObject.SetActive(true);
                 SpawnCrab();
-              
             }
         }
     }
