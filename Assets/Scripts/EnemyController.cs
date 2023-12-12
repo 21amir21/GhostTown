@@ -42,10 +42,10 @@ public class EnemyController : MonoBehaviour
         // flickering to indicate damage 
         // SpriteFlicker(spriteRenderer);
 
-        //if (health <= 0)
-        //{
-        //    health = 0;
-        //}
+        if (health <= 0)
+        {
+            health = 0;
+        }
 
         // if enemy is dead
         if (health == 0)
