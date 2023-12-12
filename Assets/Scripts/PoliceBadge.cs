@@ -18,6 +18,6 @@ public class PoliceBadge : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
-            FindObjectOfType<LevelManager>().CurrentCheckpoint = this.gameObject;
+            FindObjectOfType<LevelManager>().currentCheckpoint = gameObject.transform;
     }
 }

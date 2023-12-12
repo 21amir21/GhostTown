@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	// Animation 
-	private Animator animator; 
+	//private Animator animator;
 
 	public float moveSpeed, jumpHeight;
-	public float actualMoveSpeed; // TODO: public for testing
+	public float actualMoveSpeed; // TODO: Patrick public for testing
+	public bool facingRight = true; // make sure this is set to the correct direction
 
 	private Rigidbody2D rigidBody;
 	private SpriteRenderer sprite;
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
 		rotatingPlatform = null;
-		animator = GetComponent<Animator>();
+		//animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
 	}
 
@@ -54,18 +55,20 @@ public class PlayerMovement : MonoBehaviour
 		{
 			actualMoveSpeed = moveSpeed; // to be used later in FixedUpdate()
 
-			if (sprite != null)
+			if (!facingRight)
 			{
-				sprite.flipX = false; // faces right
+				facingRight = true;
+				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z); // faces right
 			}
 		}
 		if (Input.GetKey(leftArrow))
 		{
 			actualMoveSpeed = -moveSpeed;// to be used later in FixedUpdate()
 
-			if (sprite != null)
+			if (facingRight)
 			{
-				sprite.flipX = true; // faces left
+				facingRight = false;
+				transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z); // faces left
 			}
 		}
 		// if player presses up arrow key and is grounded then jumps
@@ -88,10 +91,10 @@ public class PlayerMovement : MonoBehaviour
 
 		PlatformCheck();
 
-		// animation to jump
-		animator.SetBool("grounded", grounded);
-		// walking animation
-		animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
+		//// animation to jump
+		//animator.SetBool("grounded", grounded);
+		//// walking animation
+		//animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
 	}
 
 	// used for the execution of commands
@@ -140,15 +143,9 @@ public class PlayerMovement : MonoBehaviour
 			rigidBody.drag = 0; // resets drag as it was changed from sand
 			rigidBody.gravityScale = 1; // resets gravity as it was changed from rotating platform
 			rigidBody.freezeRotation = true; // freezes z rotation as it was unfrozen from rotating platform
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 1.5f); // resets the rotation of the player from rotating platform
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 0.1f); // resets the rotation of the player from rotating platform
 			rotatingPlatform = null;
 			platform = null;
 		}
-
-	// used for visualisation in the editor
-	void OnDrawGizmos() // TODO: Remove later
-	{
-		Gizmos.color = new Color(1, 0, 0, 0.5f);
-		Gizmos.DrawCube(colliderCheck.position, new Vector3(0.99f, 0.2f, 0f));
 	}
 }
