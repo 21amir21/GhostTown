@@ -2,26 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coffee : MonoBehaviour
+public class DonutsPolice : EnemyController
 {
-    public int damage = 1;
+    public ABShooting playerShoot;
     // Start is called before the first frame update
     void Start()
     {
-
+        playerShoot = FindObjectOfType<ABShooting>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-    void OnCollisionStay2D(Collision2D other)
+
+    private void OnDestroy()
     {
-        if (other.collider.CompareTag("Player"))
-        {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
-        }
+        FindObjectOfType<ABShooting>().EnableShootingAbility();
     }
 
 }

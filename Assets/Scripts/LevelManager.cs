@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+
 	public Transform currentCheckpoint; // we can update the current checkpoint from within Unity
 	public Transform player;
 
@@ -23,7 +24,6 @@ public class LevelManager : MonoBehaviour
 		//once u've found it, change its player game object's position to be at the last checkpoint the
 		//player passed through before s/he died ..
 	}
-
 	public void RestartScene()
 	{
 		// reloads the scene to reset everything that was changed
