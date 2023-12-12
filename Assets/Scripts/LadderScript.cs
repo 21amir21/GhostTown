@@ -9,6 +9,8 @@ public class LadderScript : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
 
+
+
     // private Animator anim; // low han3ml animation
 
     [SerializeField] Rigidbody2D rb;
@@ -32,6 +34,19 @@ public class LadderScript : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        if (isClimbing)
+        {
+            rb.gravityScale = 0f;
+            rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+        }
+        else
+        {
+            rb.gravityScale = 1f; // return player's gravity back to 1 // the normal
+        }
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -49,4 +64,7 @@ public class LadderScript : MonoBehaviour
             isClimbing = false;
         }
     }
+
+
+
 }

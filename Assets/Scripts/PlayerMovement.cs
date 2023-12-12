@@ -33,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
 	// rotation
 	private Quaternion defultRotation;
-
+  
+  public bool screwDriverIsAccquired; // Amir's
+  
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -44,16 +46,21 @@ public class PlayerMovement : MonoBehaviour
 		rotatingPlatform = null;
 		//animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
+    screwDriverIsAccquired = false; // Amir's
 	}
+  
+  // Update is called once per frame
+  // used for receiving the inputs from the user and simple commands
+    void Update()
+    {
+        actualMoveSpeed = 0;
+        if (Input.GetKey(rightArrow))
+        {
+            actualMoveSpeed = moveSpeed; // to be used later in FixedUpdate()
 
-	// Update is called once per frame
-	// used for receiving the inputs from the user and simple commands
-	void Update()
-	{
-		actualMoveSpeed = 0;
-		if (Input.GetKey(rightArrow))
-		{
-			actualMoveSpeed = moveSpeed; // to be used later in FixedUpdate()
+
+           
+
 
 			if (!facingRight)
 			{
