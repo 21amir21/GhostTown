@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConstructionEnemy : EnemyController
+public class ABShooting : MonoBehaviour
 {
 
     public KeyCode Return;

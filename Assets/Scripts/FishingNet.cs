@@ -40,7 +40,7 @@ public class FishingNet : MonoBehaviour
             else if (FindObjectOfType<SwimmingMovement>().aquiredCrab == false && hitCount == 1)
             {
                 crab.gameObject.SetActive(true);
-                FindObjectOfType<LevelManager>().RespawnEnemy();
+                //FindObjectOfType<LevelManager>().RespawnEnemy(); // TODO: Sherouk have a look here
                 //TODO: Make camera zoom on crab and pause play
                 //while (Time.deltaTime < 5)
                 //{
