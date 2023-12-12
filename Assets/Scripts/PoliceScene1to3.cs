@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
-public class PoliceScene1to2 : MonoBehaviour
+public class PoliceScene1to3 : MonoBehaviour
 {
     private SpriteRenderer door;
     public Sprite openDoor;
@@ -19,14 +18,13 @@ public class PoliceScene1to2 : MonoBehaviour
         
     }
 
-   
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
+            FindObjectOfType<RespawnKey>().inActivateKey();
             door.sprite = openDoor;
-            //switch scenes
-            
+            //go to police scene 3
         }
     }
 }

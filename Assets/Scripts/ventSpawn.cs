@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoliceBadge : MonoBehaviour
+public class ventSpawn : MonoBehaviour
 {
+    private SpriteRenderer vent;
+    public Sprite openVent;
     // Start is called before the first frame update
     void Start()
     {
-        
+        vent = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -15,9 +17,12 @@ public class PoliceBadge : MonoBehaviour
     {
         
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
-            FindObjectOfType<LevelManager>().currentCheckpoint = gameObject.transform;
+        if(other.tag == "Player")
+        {
+            vent.sprite = openVent; 
+        }
     }
 }
