@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
 
 	//VARIABLES FOR ALL ENEMIES SPEED AND DAMAGE //
 	public float speed;
-	public int damage = 5;
+	public int damage ;
 	public bool isFacingRight = false;
 	public bool isPoliceWithKey = false;
 	// this is to trigger the damage function for the player//
@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			FindObjectOfType<PlayerStats>().TakeDamage(damage);
+			FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
 		}
 	}
 

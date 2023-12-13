@@ -8,7 +8,7 @@ public class enemybullet : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
     private float timer;
-    public int damage = 1;
+    private int damage = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class enemybullet : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
         }
     }
    

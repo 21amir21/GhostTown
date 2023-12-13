@@ -17,7 +17,7 @@ public class priChasingEnemy : EnemyController
     // Start is called before the first frame update
     void Start()
     {
-        damage = 1;
+        damage = 50;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -79,7 +79,6 @@ public class priChasingEnemy : EnemyController
         if (policemenkilled >= 2)
         {
             Debug.Log("update bta3 ivBox 48al");
-           
             invisibleBox.SetActive(true);
 
         }

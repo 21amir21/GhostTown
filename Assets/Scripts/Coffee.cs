@@ -20,7 +20,7 @@ public class Coffee : MonoBehaviour
     {
         if (other.collider.CompareTag("Player"))
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
         }
     }
 
