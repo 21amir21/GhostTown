@@ -26,7 +26,7 @@ public class Detection : MonoBehaviour
     {
         if(other.tag == "Player" )
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(100);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(100);
             detectionColor.sprite = redZone;
             Invoke("waitYellow", 1);
 

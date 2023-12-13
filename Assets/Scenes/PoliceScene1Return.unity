@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: aquiredKey
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4128708493797315234, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+      propertyPath: jumpHeight
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -21,6 +21,7 @@ public class FallingBox : MonoBehaviour
    void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Player"){
          box.sprite = fallBox;
+         Object.Destroy(gameObject, 1.5f);
         }
     }
 }

@@ -12,9 +12,10 @@ public class PlayerStats : MonoBehaviour
 	public bool isImmune = false;
 	public float immunityDura1on = 1.5f; //el w2t ely sonic 3mal ynor w ytfy
 	private float immunityTime = 0f;
+    private int barrelCount = 0;
 
-	// public int coinsCollected = 0;
-	void Start()
+    // public int coinsCollected = 0;
+    void Start()
 	{
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 		health = maxHealth;
@@ -111,8 +112,13 @@ public class PlayerStats : MonoBehaviour
 		FindObjectOfType<LevelManager>().RestartScene();
 	}
 
-	// public void CollectCoin(int coinValue)
-	// {
-	// coinsCollected = coinsCollected + coinValue;
-	// }
+	public void CollectBarrel()
+	{
+		barrelCount++;
+	}
+
+	public int getBarrelCount()
+	{
+		return barrelCount;
+	}
 } //Class
