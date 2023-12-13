@@ -5,14 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	// Animation 
-	//private Animator animator;
+	private Animator animator;
 
 	public float moveSpeed, jumpHeight;
 	public float actualMoveSpeed; // TODO: Patrick public for testing
 	public bool facingRight = true; // make sure this is set to the correct direction
 
 	private Rigidbody2D rigidBody;
-	private SpriteRenderer sprite;
 
 	// input keys
 	public KeyCode upArrow, leftArrow, rightArrow;
@@ -43,26 +42,21 @@ public class PlayerMovement : MonoBehaviour
 	{
 		checkArea = new Vector2(0.99f, 0.1f); // TODO: Patrick used for gizmo
 		rigidBody = GetComponent<Rigidbody2D>();
-		sprite = GetComponent<SpriteRenderer>();
 		platform = null;
 		rotatingPlatform = null;
-		//animator = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
     screwDriverIsAccquired = false; // Amir's
 	}
   
-  // Update is called once per frame
-  // used for receiving the inputs from the user and simple commands
+	// Update is called once per frame
+	// used for receiving the inputs from the user and simple commands
     void Update()
     {
         actualMoveSpeed = 0;
         if (Input.GetKey(rightArrow))
         {
             actualMoveSpeed = moveSpeed; // to be used later in FixedUpdate()
-
-
-           
-
 
 			if (!facingRight)
 			{
@@ -100,10 +94,10 @@ public class PlayerMovement : MonoBehaviour
 
 		PlatformCheck();
 
-		//// animation to jump
-		//animator.SetBool("grounded", grounded);
-		//// walking animation
-		//animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
+		// animation to jump
+		animator.SetBool("grounded", grounded);
+		// walking animation
+		animator.SetFloat("speed", Mathf.Abs(rigidBody.velocity.x));
 	}
 
 	// used for the execution of commands

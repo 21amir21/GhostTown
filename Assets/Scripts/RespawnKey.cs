@@ -12,8 +12,7 @@ public class RespawnKey : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        player = GameObject.Find("Player");
+		player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     // Update is called once per frame
@@ -28,7 +27,7 @@ public class RespawnKey : MonoBehaviour
         {
             count++;
             FindObjectOfType<PlayerMovement>().aquiredKey = true;
-            //TODO: make crab child of player
+            //TODO: make key child of player
             this.transform.parent = player.transform;
 
         }

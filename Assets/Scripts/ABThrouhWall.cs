@@ -6,7 +6,7 @@ public class ABThrouhWall : MonoBehaviour
 {
     public GameObject boo;
     //public GameObject brickWall;
-    public SpriteRenderer spriteRendererBoo;
+    private SpriteRenderer spriteRendererBoo;
     // Start is called before the first frame update
     void Start()
     {

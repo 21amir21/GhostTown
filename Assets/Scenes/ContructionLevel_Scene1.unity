@@ -649,6 +649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9b569d03c9d0de499fb16ebc23b15b0, type: 3}
+--- !u!4 &426315767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4128708494324154038, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+  m_PrefabInstance: {fileID: 7412309557250623642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &512866635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1209,10 +1214,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   flickerDuration: 0.1
-  spriteRenderer: {fileID: 0}
   speed: 0
   damage: 5
   isFacingRight: 0
+  isPoliceWithKey: 0
 --- !u!114 &726788304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,10 +1232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   flickerDuration: 0.1
-  spriteRenderer: {fileID: 726788297}
   speed: 0
   damage: 5
   isFacingRight: 0
+  isPoliceWithKey: 0
 --- !u!1001 &945871890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,10 +1880,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   flickerDuration: 0.1
-  spriteRenderer: {fileID: 1377853379}
   speed: 2
   damage: 5
   isFacingRight: 1
+  isPoliceWithKey: 0
   leftLimit: 96
   rightLimit: 98
 --- !u!61 &1377853382
@@ -1983,7 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac887baa930c08459bd1096672337c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentCheckpoint: {fileID: 0}
+  currentCheckpoint: {fileID: 0}
   player: {fileID: 6886512651749644857}
 --- !u!4 &1418885642
 Transform:
@@ -3027,6 +3032,18 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4128708493797315234, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+      propertyPath: colliderCheck
+      value: 
+      objectReference: {fileID: 426315767}
+    - target: {fileID: 4128708493797315234, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+      propertyPath: sandLayerMask.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128708493797315234, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+      propertyPath: rotatingPlatformLayerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -3037,7 +3054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.11
+      value: 73.06
       objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_LocalPosition.y

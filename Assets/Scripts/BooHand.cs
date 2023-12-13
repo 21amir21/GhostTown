@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class BooHand : MonoBehaviour
 {
+	EnemyController enemyController;
     public int damage = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
-            FindObjectOfType<EnemyController>().EnemyTakeDamage(damage);
+			
+            collision.GetComponent<EnemyController>().EnemyTakeDamage(damage);
         }
     }
 

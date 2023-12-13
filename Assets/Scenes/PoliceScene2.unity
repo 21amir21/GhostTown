@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 115068764}
   - component: {fileID: 115068766}
   - component: {fileID: 115068767}
+  - component: {fileID: 115068768}
   m_Layer: 0
   m_Name: policeman_4
   m_TagString: Enemy
@@ -420,12 +421,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  flickerDuration: 0.1
   spriteRenderer: {fileID: 0}
   speed: 0
   damage: 5
   isFacingRight: 0
+  isPoliceWithKey: 0
   playerShoot: {fileID: 376971721}
+--- !u!114 &115068768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115068763}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0288b8c0b5e9fb54eaf584ebd05945d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  spriteRenderer: {fileID: 0}
+  speed: 0
+  damage: 5
+  isFacingRight: 0
+  isPoliceWithKey: 0
 --- !u!1 &203311456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7595164244518153345, guid: a7398eccf9b9fab4988d860005c10fac, type: 3}
@@ -663,6 +682,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &849308613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4128708494324154038, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+  m_PrefabInstance: {fileID: 1993591732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1082189040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1162,6 +1186,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 4128708493797315234, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
+      propertyPath: colliderCheck
+      value: 
+      objectReference: {fileID: 849308613}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_RootOrder
       value: 6
