@@ -30,13 +30,13 @@ public class ABThrouhWall : MonoBehaviour
         {
             boo.GetComponent<BoxCollider2D>().enabled = false;
 
-            if (!spriteRendererBoo.flipX)
+            if (boo.transform.localScale.x > 0f)
             {
-                boo.transform.position = new Vector3(boo.transform.position.x + 1.2f, boo.transform.position.y, boo.transform.position.z);
+                boo.transform.position = new Vector3(boo.transform.position.x + 1.8f, boo.transform.position.y, boo.transform.position.z);
             }
             else
             {
-                boo.transform.position = new Vector3(boo.transform.position.x - 1.2f, boo.transform.position.y, boo.transform.position.z);
+                boo.transform.position = new Vector3(boo.transform.position.x - 1.8f, boo.transform.position.y, boo.transform.position.z);
             }
 
             boo.GetComponent<BoxCollider2D>().enabled = true;

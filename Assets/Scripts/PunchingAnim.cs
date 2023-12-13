@@ -23,7 +23,7 @@ public class PunchingAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(punchingkey)) { 
+        if(Input.GetKey(punchingkey)) { 
 
             boohand.SetActive(true);
             punching = true;
@@ -31,7 +31,7 @@ public class PunchingAnim : MonoBehaviour
             animator.SetBool("punching",punching);
         
         }
-        else if (Input.GetKeyUp(punchingkey))
+        else
         {
             boohand.SetActive(false);
             punching=false;
