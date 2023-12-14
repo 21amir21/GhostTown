@@ -16,26 +16,24 @@ public class PunchingAnim : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         boohand.SetActive(false);
-        punching = true;    
+        punching = false;    
         
     }
 
-    // Update is called once per frame
-    void Update()
+ 
+    public void Punch()
     {
-        if(Input.GetKey(punchingkey)) { 
-
             boohand.SetActive(true);
             punching = true;
             //animation
-            animator.SetBool("punching",punching);
-        
-        }
-        else
-        {
-            boohand.SetActive(false);
-            punching=false;
             animator.SetBool("punching", punching);
-        }
+
+    }
+
+    public void StopPunch()
+    {
+        boohand.SetActive(false);
+        punching = false;
+        animator.SetBool("punching", punching);
     }
 }

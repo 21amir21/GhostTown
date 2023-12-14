@@ -8,17 +8,18 @@ public class Brick : MonoBehaviour
     public int damage=3;
     private GameObject standingEnemy;
     private Rigidbody2D rb;
-    private float timer ;
+    private float timer =0f;
     // Start is called before the first frame update
     void Start()
     {
-       
-        standingEnemy = GameObject.FindGameObjectWithTag("Enemy");
-        if(standingEnemy.transform.localScale.x<0 )
+
+        standingEnemy = GameObject.FindWithTag("Enemy");
+        if(standingEnemy.transform.localScale.x < 0 )
         {
             speed = -speed;
-            transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3((-transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
+      
             
         rb = GetComponent<Rigidbody2D>();   
     }
