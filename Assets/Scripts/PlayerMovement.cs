@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 		rotatingPlatform = null;
 		animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
-    screwDriverIsAccquired = false; // Amir's
+		screwDriverIsAccquired = false; // Amir's
 	}
   
 	// Update is called once per frame
