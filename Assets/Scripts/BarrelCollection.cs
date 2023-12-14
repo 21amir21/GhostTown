@@ -20,7 +20,7 @@ public class BarrelCollection : MonoBehaviour
         if (other.tag == "Player")
         {
             FindObjectOfType<PlayerStats>().CollectBarrel();
-            Debug.Log(FindObjectOfType<PlayerStats>().getBarrelCount());
+            Debug.Log(FindObjectOfType<PlayerStats>().GetBarrelCount());
             Object.Destroy(gameObject);
         }
     }

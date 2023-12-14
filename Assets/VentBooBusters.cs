@@ -20,7 +20,7 @@ public class VentBooBusters : MonoBehaviour
     }
      void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player" && FindObjectOfType<PlayerStats>().getBarrelCount() == 7) 
+        if(other.tag == "Player" && FindObjectOfType<PlayerStats>().GetBarrelCount() == 7) 
         {
             vent.sprite = openVent;
             //add transition to boobuster scene 2

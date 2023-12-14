@@ -117,7 +117,7 @@ public class PlayerStats : MonoBehaviour
 		barrelCount++;
 	}
 
-	public int getBarrelCount()
+	public int GetBarrelCount()
 	{
 		return barrelCount;
 	}
