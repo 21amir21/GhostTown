@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
 
 	//VARIABLES FOR ALL ENEMIES SPEED AND DAMAGE //
 	public float speed;
-	public int damage ;
+	public int damage = 5;
 	public bool isFacingRight = false;
 	public bool isPoliceWithKey = false;
 	// this is to trigger the damage function for the player//
