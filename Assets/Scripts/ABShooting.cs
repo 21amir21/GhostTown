@@ -8,15 +8,6 @@ public class ABShooting : MonoBehaviour
     public Transform firepoint;
     public GameObject bullet;
     public bool shootingAbilityEnabled = false;
-    
-	// Update is called once per frame
-	void Update()
-	{
-		if (shootingAbilityEnabled==true && Input.GetKeyDown(Return))
-		{
-			Shooting();
-		}   
-	}
 
 	public void Shooting()
 	{
