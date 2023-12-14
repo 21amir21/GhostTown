@@ -80,6 +80,7 @@ public class priChasingEnemy : EnemyController
         {
             Debug.Log("update bta3 ivBox 48al");
             invisibleBox.SetActive(true);
+           
 
         }
     }
