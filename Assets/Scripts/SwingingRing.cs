@@ -11,4 +11,6 @@ public class SwingingRing : MonoBehaviour
 			FindObjectOfType<PlayerStats>().TakeDamageAndDie(10);
 		}
 	}
+
+	// TODO: Patrick rotate ring
 }

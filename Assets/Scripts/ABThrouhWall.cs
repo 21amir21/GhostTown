@@ -7,26 +7,17 @@ public class ABThrouhWall : MonoBehaviour
     public GameObject boo;
     //public GameObject brickWall;
     private SpriteRenderer spriteRendererBoo;
+	public bool isSelected = false;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRendererBoo = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void ThroughWall()
-    {
-
-    }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "BrickWall")
+        if (collision.collider.tag == "BrickWall" && isSelected)
         {
             boo.GetComponent<BoxCollider2D>().enabled = false;
 
