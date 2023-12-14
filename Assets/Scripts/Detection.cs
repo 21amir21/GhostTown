@@ -26,10 +26,9 @@ public class Detection : MonoBehaviour
     {
         if(other.tag == "Player" )
         {
-            FindObjectOfType<PlayerStats>().TakeDamageAndDie(100);
+            FindObjectOfType<PlayerStats>().TakeDamageAndRespawn(100);
             detectionColor.sprite = redZone;
             Invoke("waitYellow", 1);
-
         }
     }
 }

@@ -30,7 +30,7 @@ public class JellyFishController : SwimEnemyController
     {
         if (other.tag == "SwimPlayer")
         {
-            FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
             Flip();
         }
         else if (other.tag == "Corals")

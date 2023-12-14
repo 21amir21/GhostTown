@@ -19,7 +19,7 @@ public class DonutsPolice : EnemyController
 
     private void OnDestroy()
     {
-        FindObjectOfType<ABShooting>().EnableShootingAbility();
+        FindObjectOfType<AbilityManager>().addAbility();
     }
 
 }

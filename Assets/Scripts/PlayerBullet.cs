@@ -6,6 +6,7 @@ public class PlayerBullet : MonoBehaviour
 {
     public float speed;
     public ABShooting player;
+	public int damage = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +40,8 @@ public class PlayerBullet : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Destroy(other.gameObject);
-            Destroy(this.gameObject);
+			other.GetComponent<EnemyController>().EnemyTakeDamage(damage);
+			Destroy(gameObject);
         }
     }
 }

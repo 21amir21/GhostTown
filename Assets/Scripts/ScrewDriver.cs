@@ -11,7 +11,7 @@ public class ScrewDriver : MonoBehaviour
     void Start()
     {
 
-        player = GameObject.Find("Player");
+        player = GameObject.Find("PlayerwithAnimandHand");
     }
 
     // Update is called once per frame

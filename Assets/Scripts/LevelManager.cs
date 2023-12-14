@@ -7,19 +7,19 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-	public Transform currentCheckpoint; // we can update the current checkpoint from within Unity
+	public Vector3 currentCheckpoint; // we can update the current checkpoint from within Unity
 	public Transform player;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		currentCheckpoint = player.transform;
+		currentCheckpoint = player.transform.position;
 	}
 
 	[Obsolete("Use RestartScene instead unless you actually mean to use respawn")]
 	public void RespawnPlayer()
 	{
-		FindObjectOfType<PlayerMovement>().transform.position = currentCheckpoint.transform.position;
+		player.transform.position = currentCheckpoint;
 		//Search for the asset/object called Controller (ur player's script code name whatever it is).
 		//once u've found it, change its player game object's position to be at the last checkpoint the
 		//player passed through before s/he died ..

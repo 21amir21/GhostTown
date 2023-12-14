@@ -46,10 +46,13 @@ public class PlayerStats : MonoBehaviour
 		if (isImmune == false)
 		{
 			health -= damage;
+
 			if (health < 0)
 				health = 0;
+
 			if (health == 0)
 			{
+				health = maxHealth;
 				Debug.Log("Gameover"); // TODO: add game over splash screen
 				FindObjectOfType<LevelManager>().RespawnPlayer();
 			}

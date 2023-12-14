@@ -41,7 +41,6 @@ public class RotatingPlatform : MonoBehaviour
 			isPLayerColliding = false;
 			rigidBody.angularVelocity = 0;
 			FindObjectOfType<PlayerMovement>().rotatingPlatform = null;
-			Debug.Log("ih");
 		}
 	}
 }

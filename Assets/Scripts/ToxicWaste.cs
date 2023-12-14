@@ -19,7 +19,7 @@ public class ToxicWaste : SwimEnemyController
     {
         if (other.tag == "SwimPlayer")
         {
-            FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
             // FindObjectOfType<LevelManager>().RespawnPlayer();
         }
     }

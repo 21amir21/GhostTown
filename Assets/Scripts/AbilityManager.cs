@@ -6,7 +6,7 @@ using UnityEngine;
 public class AbilityManager : MonoBehaviour
 {
 	private int currentAbility = 0;
-	private int abilityCount = 1;
+	public int abilityCount = 0;
 	private static AbilityManager instance = null;
 
 	private KeyCode switchAbility = KeyCode.Tab;
@@ -37,7 +37,7 @@ public class AbilityManager : MonoBehaviour
 			switch (currentAbility)
 			{
 				case 0: // Punch
-					FindObjectOfType<PunchingAnim>(); // TODO: Patrick Punch
+					FindObjectOfType<PunchingAnim>().Punch(); // TODO: Patrick Punch
 					break;
 				case 2: // Shoot
 					FindObjectOfType<ABShooting>().Shooting();
@@ -46,9 +46,13 @@ public class AbilityManager : MonoBehaviour
 					break;
 			}
 		}
+		else if (Input.GetKeyUp(useAbility) && currentAbility == 0)
+		{
+			FindObjectOfType<PunchingAnim>().StopPunch();
+		}
 	}
 
-	public void addAbility(MonoBehaviour ability)
+	public void addAbility()
 	{
 		abilityCount++;
 	}

@@ -7,6 +7,6 @@ public class AcquiringAbilityThroughWall : MonoBehaviour
 
     private void OnDestroy()
     {
-        FindObjectOfType<ABThrouhWall>().EnableThroughWall();
+        FindObjectOfType<AbilityManager>().addAbility();
     }
 }
