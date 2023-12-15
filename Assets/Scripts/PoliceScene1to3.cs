@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PoliceScene1to3 : MonoBehaviour
 {
@@ -12,19 +13,18 @@ public class PoliceScene1to3 : MonoBehaviour
         door = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && FindObjectOfType<PlayerMovement>().aquiredKey)
         {
             FindObjectOfType<RespawnKey>().inActivateKey();
             door.sprite = openDoor;
-            //go to police scene 3
+            Invoke("NextScene", 0.5f);
         }
     }
+
+	void NextScene()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
 }

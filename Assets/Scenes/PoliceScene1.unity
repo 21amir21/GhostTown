@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac887baa930c08459bd1096672337c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCheckpoint: {fileID: 0}
+  currentCheckpoint: {x: 0, y: 0, z: 0}
   player: {fileID: 677580177}
 --- !u!1001 &789300871
 PrefabInstance:
@@ -1032,6 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2be5546fd8e8df4cafc67624df9242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityCount: 0
 --- !u!4 &881434278
 Transform:
   m_ObjectHideFlags: 0
@@ -1153,11 +1154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.334381
+      value: -9.98
       objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9453244
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 4128708493797315235, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
       propertyPath: m_LocalPosition.z

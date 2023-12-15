@@ -1092,7 +1092,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bbc6ec16b1d1c04da1201c987bb6090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzle:
+    m_Handle: 0
   playpuzzel: {fileID: 1089897361}
+  interactKey: 120
 --- !u!61 &763936746
 BoxCollider2D:
   m_ObjectHideFlags: 0

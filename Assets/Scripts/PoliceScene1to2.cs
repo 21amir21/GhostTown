@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PoliceScene1to2 : MonoBehaviour
 {
@@ -12,21 +13,17 @@ public class PoliceScene1to2 : MonoBehaviour
     {
         door = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
             door.sprite = openDoor;
-            //switch scenes
-            
-        }
+			Invoke("NextScene", 1);
+		}
     }
+	void NextScene()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
 }

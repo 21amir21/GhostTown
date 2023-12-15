@@ -860,6 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2be5546fd8e8df4cafc67624df9242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityCount: 0
 --- !u!4 &487854361
 Transform:
   m_ObjectHideFlags: 0
@@ -1712,7 +1713,7 @@ GameObject:
   - component: {fileID: 1636624786}
   - component: {fileID: 1636624785}
   - component: {fileID: 1636624784}
-  - component: {fileID: 1636624783}
+  - component: {fileID: 1636624787}
   m_Layer: 6
   m_Name: Water
   m_TagString: Untagged
@@ -1720,18 +1721,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1636624783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636624782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb1420d7c2f1d26458147d34f4d4e09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1636624784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1825,6 +1814,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636624787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636624782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3783dc6f1fc5d742ad6f14e7fbb3c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfPeople: 0
+  numberOfPeopleKilled: 0
 --- !u!1 &1746728927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4128708493797315239, guid: f48efb047bdfabc458deb7990c25b22d, type: 3}
@@ -1990,7 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac887baa930c08459bd1096672337c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCheckpoint: {fileID: 0}
+  currentCheckpoint: {x: 0, y: 0, z: 0}
   player: {fileID: 1746728938}
 --- !u!1 &1890705306
 GameObject:

@@ -27,9 +27,6 @@ public class EnemyController : MonoBehaviour
 		transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 	}
 
-
-
-
 	public void EnemyTakeDamage(int damage)
 	{
 		// enemy taking damage from whatever ability
@@ -48,17 +45,8 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-   
-
-	// Start is called before the first frame update
-	void Start()
+	private void OnDestroy()
 	{
-		
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		
+		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
 	}
 }

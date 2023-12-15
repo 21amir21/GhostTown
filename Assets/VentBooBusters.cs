@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VentBooBusters : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class VentBooBusters : MonoBehaviour
         if(other.tag == "Player" && FindObjectOfType<PlayerStats>().GetBarrelCount() == 7) 
         {
             vent.sprite = openVent;
-            //add transition to boobuster scene 2
-        }
-    }
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+	}
 }

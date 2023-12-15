@@ -1,40 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScientistLock : MonoBehaviour
 {
+	public Scene puzzle;
+
     public GameObject playpuzzel;
     private int counter = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public KeyCode interactKey;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && counter== 1)
         {
-
             playpuzzel.SetActive(true);
-        }
-
+		}
     }
-    private void OnTriggerExit2D(Collider2D other)
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(interactKey))
+		{
+			playpuzzel.SetActive(false);
+			SceneManager.LoadScene(puzzle.buildIndex, LoadSceneMode.Additive);
+		}
+
+		// Check if the puzzle is loaded
+		if (puzzle.isLoaded)
+		{
+			if (Input.GetKeyDown(interactKey))
+			{
+				// Unloads the camera in the police scene
+				SceneManager.GetActiveScene().GetRootGameObjects()[0].SetActive(false);
+				// Set the puzzle scene as the active scene
+				SceneManager.SetActiveScene(SceneManager.GetSceneByName("Puzzle"));
+			}
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-
             playpuzzel.SetActive(false);
         }
     }
-
 
     public void policeCounter()
     {

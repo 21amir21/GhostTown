@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/WorldMap.unity
+    guid: 8a49db067d4950147849615cbda867c8
+  - enabled: 1
+    path: Assets/Scenes/ContructionLevel_Scene1.unity
+    guid: 1b365d05f1ff0d045afea5f0734b46ce
+  - enabled: 1
     path: Assets/Scenes/ConstructionLevel_Scene2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PoliceScene1.unity
+    guid: 8315e92e2422c32429ba3e2f40dfbe83
+  - enabled: 1
+    path: Assets/Scenes/PoliceScene2.unity
+    guid: 1039ea1a5e0376b41a5fb7f09c4c6fa4
+  - enabled: 1
+    path: Assets/Scenes/PoliceScene1Return.unity
+    guid: 8a346177a4251664bb456227c0f9a4a6
+  - enabled: 1
+    path: Assets/Scenes/PoliceScene 3.unity
+    guid: b8c826f513e3fd745afbfc9588b43d44
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: ddab5c65fc004964c997805b371604c0
+  - enabled: 1
+    path: Assets/Scenes/Swimmer Scene 1.unity
+    guid: 9f52cd0348fc43e4ab4c4fe2b5f6bf61
+  - enabled: 1
+    path: Assets/Scenes/Swimmer Scene 2.unity
+    guid: eb0daaded075857489991b6676cbebd7
+  - enabled: 1
+    path: Assets/Scenes/BooBustersScene1.unity
+    guid: d4e359cfe5756ce46bb5246d8586f45d
+  - enabled: 1
+    path: Assets/Scenes/BooBusterScene2.unity
+    guid: 754832c7eaf3cc3408351af6c3f0980b
   m_configObjects: {}

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-
 	public Vector3 currentCheckpoint; // we can update the current checkpoint from within Unity
 	public Transform player;
 
