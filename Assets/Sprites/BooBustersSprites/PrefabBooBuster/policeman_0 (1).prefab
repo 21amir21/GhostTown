@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yellowZone: {fileID: 21300000, guid: c9cae8a3064b5f64789c5cede7a0a5c9, type: 3}
   redZone: {fileID: 21300000, guid: 3008a57f587853345a15e50a7fe2af3e, type: 3}
+  clip: {fileID: 0}
 --- !u!1 &2020299692350813191
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,9 +157,10 @@ GameObject:
   - component: {fileID: 2020299692350813184}
   - component: {fileID: 2020299692350813186}
   - component: {fileID: 2020299692350813188}
+  - component: {fileID: 1725759959019569879}
   m_Layer: 0
   m_Name: policeman_0 (1)
-  m_TagString: Untagged
+  m_TagString: BooBuster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,11 +318,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125b34b50f808143a773049a9f658e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  spriteRenderer: {fileID: 0}
+  health: 50
   speed: 2
   damage: 5
   isFacingRight: 1
   isPoliceWithKey: 0
   leftLimit: 3.4
   rightLimit: 10
+--- !u!95 &1725759959019569879
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020299692350813191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 269b229d291ca14499d9bf34ea355abc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

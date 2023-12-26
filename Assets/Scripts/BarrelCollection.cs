@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class BarrelCollection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public AudioClip clip;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            FindObjectOfType<PlayerStats>().CollectBarrel();
-            Debug.Log(FindObjectOfType<PlayerStats>().GetBarrelCount());
-            Object.Destroy(gameObject);
+			AudioManager.instance.PlaySingle(clip);
+            Invoke("CollectBarrel", 0.3f);
         }
     }
+	private void CollectBarrel()
+	{
+		FindObjectOfType<PlayerStats>().CollectBarrel();
+		Debug.Log(FindObjectOfType<PlayerStats>().GetBarrelCount());
+		Object.Destroy(gameObject);
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.tag == "Player")
+		{
+			AudioManager.instance.PlaySingle(null);
+		}
+	}
 }

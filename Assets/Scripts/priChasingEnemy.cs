@@ -14,28 +14,42 @@ public class priChasingEnemy : EnemyController
     private Transform player;
     private Rigidbody2D rb;
 
+	private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        damage = 50;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+		if (player.transform.position.x < transform.position.x && isFacingRight)
+		{
+			Flip();
+		}
+		else if (player.transform.position.x > transform.position.x && !isFacingRight)
+		{
+			Flip();
+		}
 
-        if (player != null)
+		timer += Time.deltaTime;
+
+		if (player != null)
         {
+
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
             // Check if the player is within the detection range
             if (distanceToPlayer <= detectionRange)
             {
-                // Move towards the player
-                Vector2 direction = (player.position - transform.position).normalized;
+				
+
+				// Move towards the player
+				Vector2 direction = (player.position - transform.position).normalized;
                 rb.velocity = direction * moveSpeed;
 
                 // Flip the enemy sprite based on player position
@@ -62,6 +76,7 @@ public class priChasingEnemy : EnemyController
                 rb.velocity = Vector2.zero;
             }
         }
+		animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
 
 
@@ -76,12 +91,11 @@ public class priChasingEnemy : EnemyController
     {
         Debug.Log("ondestroy fel prichasing working fol");
         policemenkilled++;
-        if (policemenkilled >= 2)
+		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
+        if (policemenkilled >= 3)
         {
             Debug.Log("update bta3 ivBox 48al");
             invisibleBox.SetActive(true);
-           
-
         }
-    }
+	}
 }

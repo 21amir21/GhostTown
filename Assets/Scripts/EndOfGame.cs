@@ -4,5 +4,20 @@ using UnityEngine;
 
 public class EndOfGame : MonoBehaviour
 {
-	// finished game :)
+	public AudioClip clip;
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Finish") && FindObjectOfType<PlayerStats>().GetBarrelCount() == 4)
+		{
+			AudioManager.instance.PlaySingle(clip);
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Finish") && FindObjectOfType<PlayerStats>().GetBarrelCount() == 4)
+		{
+			AudioManager.instance.PlaySingle(null);
+		}
+	}
 }

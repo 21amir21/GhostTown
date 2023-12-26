@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		player = FindObjectOfType<PlayerStats>().transform;
 		currentCheckpoint = player.transform.position;
 	}
 
@@ -28,5 +29,10 @@ public class LevelManager : MonoBehaviour
 		// reloads the scene to reset everything that was changed
 		// params are string which is the name of the scene so it restarts the scene that is currently active
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+
+	private void OnDestroy()
+	{
+		FindObjectOfType<AbilityManager>().abilityGained = false;
 	}
 }

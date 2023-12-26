@@ -7,6 +7,7 @@ public class Detection : MonoBehaviour
     private SpriteRenderer detectionColor;
     public Sprite yellowZone;
     public Sprite redZone;
+	public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +27,11 @@ public class Detection : MonoBehaviour
     {
         if(other.tag == "Player" )
         {
-            FindObjectOfType<PlayerStats>().TakeDamageAndRespawn(100);
-            detectionColor.sprite = redZone;
-            Invoke("waitYellow", 1);
-        }
+			//AudioManager.instance.PlaySingle(clip);
+			FindObjectOfType<PlayerStats>().TakeDamageAndRespawn(100);
+			detectionColor.sprite = redZone;
+			Invoke("waitYellow", 1);
+		}
     }
+
 }

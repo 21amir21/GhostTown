@@ -25,10 +25,14 @@ public class ScientistDialogue : MonoBehaviour
 
     public GameObject continueButton;
 
+	public AudioClip clip;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
+		
+			AudioManager.instance.PlaySingle(clip);
+			
             if (dialoguePanel.activeInHierarchy)
             {
                 ZeroText();
@@ -41,9 +45,13 @@ public class ScientistDialogue : MonoBehaviour
                 imageDisplay.sprite = dialogueInfoList[index].image;
                 StartCoroutine(Typing());
             }
-        }
-
-        if (dialogueText.text == dialogueInfoList[index].dialogue)
+			
+		}
+		if (Input.GetKeyDown(KeyCode.P) &&  !(Input.GetKeyDown(KeyCode.E)))
+		{
+			NextLine();
+		}
+		if (dialogueText.text == dialogueInfoList[index].dialogue)
         {
             continueButton.SetActive(true);
         }
@@ -93,6 +101,7 @@ public class ScientistDialogue : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+		AudioManager.instance.PlaySingle(null);
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;

@@ -40,7 +40,7 @@ public class BrickForWalking : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndRespawn(damage);
             Destroy(this.gameObject);
         }
     }

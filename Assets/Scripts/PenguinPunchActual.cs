@@ -88,10 +88,10 @@ public class PenguinPunchActual : EnemyController
 
 		// splits the ground thats not under the player
 		if (player.transform.position.x < 104)
-			floors[0].SetActive(false);
-		else
 			floors[1].SetActive(false);
+		else
+			floors[0].SetActive(false);
 
-		// TODO: Patrick give ability to player
+		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
 	}
 }

@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 570560280934825153}
   - component: {fileID: 570560280934825154}
   - component: {fileID: 570560280934825166}
+  - component: {fileID: 1117915415}
   m_Layer: 0
   m_Name: WalkingEnemy
   m_TagString: Finish
@@ -62,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 570560280934825157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 96.61, y: 4.37, z: 0}
-  m_LocalScale: {x: -1.08001, y: 0.9932096, z: 1}
+  m_LocalScale: {x: -4.5144253, y: 4.151601, z: 4.1799846}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 570560280031566088}
@@ -110,9 +111,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -514679703, guid: b5ccd6b2ba7fa2d4392143049ef0f987, type: 3}
+  m_Sprite: {fileID: -122696078, guid: b5ccd6b2ba7fa2d4392143049ef0f987, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.47, y: 0.86}
@@ -155,18 +156,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021117926, y: 0.045924008}
+  m_Offset: {x: -0.0020281374, y: -0.011290014}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.01, y: 4.07}
+    oldSize: {x: 0.48, y: 0.91}
     newSize: {x: 0.47, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.919509, y: 4.0287495}
+  m_Size: {x: 0.4428721, y: 0.86887264}
   m_EdgeRadius: 0
 --- !u!61 &570560280934825153
 BoxCollider2D:
@@ -181,18 +182,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019438624, y: 0.057404995}
+  m_Offset: {x: -0.015280366, y: 0.014551371}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.01, y: 4.07}
+    oldSize: {x: 0.48, y: 0.91}
     newSize: {x: 0.47, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9218123, y: 4.051711}
+  m_Size: {x: 0.5609071, y: 0.92055494}
   m_EdgeRadius: 0
 --- !u!114 &570560280934825154
 MonoBehaviour:
@@ -207,13 +208,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  spriteRenderer: {fileID: 0}
   speed: 2
   damage: 5
   isFacingRight: 0
   isPoliceWithKey: 0
-  leftLimit: 96
-  rightLimit: 103
+  leftLimit: 101
+  rightLimit: 125
 --- !u!114 &570560280934825166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +228,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 570560280031566088}
   brick: {fileID: 5283449581111362785, guid: d493152539482264fb0b44561b353cd3, type: 3}
+--- !u!95 &1117915415
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570560280934825157}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26d9b22431ea4fa4dba5ad62f2234a3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

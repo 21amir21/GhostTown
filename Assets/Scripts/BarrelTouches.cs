@@ -7,11 +7,12 @@ public class BarrelTouches : MonoBehaviour
     PlayerStats playerStats;
     int numberOfBarrels = 0;
     private Animator animator;
-
+	public AudioClip clip;
     private void Start()
     {
         playerStats = FindObjectOfType<PlayerStats>();
         animator = playerStats.GetComponent<Animator>();
+		FindObjectOfType<PlayerBullet>().toxic = true;
     }
 
     private void Update()
@@ -32,8 +33,22 @@ public class BarrelTouches : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            FindObjectOfType<PlayerStats>().CollectBarrel();
-            Destroy(gameObject);
+			AudioManager.instance.PlaySingle(clip);
+           Invoke("BarrelCollection", 0.3f);
         }
     }
+
+	void BarrelCollection()
+	{
+		FindObjectOfType<PlayerStats>().CollectBarrel();
+		Destroy(gameObject);
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			AudioManager.instance.PlaySingle(null);
+		}
+	}
 }

@@ -14,6 +14,11 @@ TagManager:
   - Bubbles
   - FishingNet
   - Wall
+  - Ladder
+  - ToxicWaste
+  - Policeman
+  - BooBuster
+  - Penguin
   layers:
   - Default
   - TransparentFX

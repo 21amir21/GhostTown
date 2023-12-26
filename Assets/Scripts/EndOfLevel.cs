@@ -10,14 +10,20 @@ public class EndOfLevel : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player") && numberOfPeopleKilled == numberOfPeople)
+		if ((collision.CompareTag("Player") || collision.CompareTag("SwimPlayer") || collision.CompareTag("Finish")) && numberOfPeopleKilled >= numberOfPeople)
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			FindObjectOfType<CameraFade>().fade = true;
+			Invoke("Fade", 1);
 		}
-		else if (collision.CompareTag("Player") && numberOfPeopleKilled != numberOfPeople)
+		else if ((collision.CompareTag("Player") || collision.CompareTag("SwimPlayer") || collision.CompareTag("Finish")) && numberOfPeopleKilled < numberOfPeople)
 		{
 			// TODO: display a message to the player that they need to kill all the enemies
 			Debug.Log("You need to kill all the enemies");
 		}
+	}
+
+	private void Fade()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

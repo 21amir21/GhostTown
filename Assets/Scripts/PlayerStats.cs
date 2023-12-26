@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
 	public int health; // TODO: Patrick make all private
@@ -17,6 +18,7 @@ public class PlayerStats : MonoBehaviour
     // public int coinsCollected = 0;
     void Start()
 	{
+		FindObjectOfType<AbilityManager>().abilityGained = false;
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 		health = maxHealth;
 	}
@@ -78,19 +80,6 @@ public class PlayerStats : MonoBehaviour
 		}
 	}
 
-	/// <summary>
-	/// Make sure to put a timer during the function call so the damage is not applied every frame
-	/// </summary>
-	public void TakeDamageOverTime(int damage) // TODO: remove if not used
-	{
-		health -= damage;
-		if (health < 0f)
-			health = 0;
-		if (health == 0)
-		{
-			KillPlayer();
-		}
-	}
 	void PlayHitReac1on()
 	{
 		isImmune = true;
@@ -111,8 +100,14 @@ public class PlayerStats : MonoBehaviour
 
 	public void KillPlayer()
 	{
+		if (FindObjectOfType<AbilityManager>().abilityGained == true)
+		{
+			Debug.Log("ability removed");
+			FindObjectOfType<AbilityManager>().abilityCount--;
+			FindObjectOfType<AbilityManager>().abilityGained = false;
+		}
 		Debug.Log("Gameover"); // TODO: add game over splash screen
-		FindObjectOfType<LevelManager>().RestartScene();
+		SceneManager.LoadScene(34, LoadSceneMode.Additive);
 	}
 
 	public void CollectBarrel()
@@ -124,4 +119,4 @@ public class PlayerStats : MonoBehaviour
 	{
 		return barrelCount;
 	}
-} //Class
+}

@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 			rigidBody.drag = 0; // resets drag as it was changed from sand
 			rigidBody.gravityScale = 1; // resets gravity as it was changed from rotating platform
 			rigidBody.freezeRotation = true; // freezes z rotation as it was unfrozen from rotating platform
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 0.1f); // resets the rotation of the player from rotating platform
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 0.5f); // resets the rotation of the player from rotating platform
 			rotatingPlatform = null;
 			platform = null;
 		}

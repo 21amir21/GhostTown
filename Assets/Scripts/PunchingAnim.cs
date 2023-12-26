@@ -23,6 +23,7 @@ public class PunchingAnim : MonoBehaviour
  
     public void Punch()
     {
+
             boohand.SetActive(true);
             punching = true;
             //animation

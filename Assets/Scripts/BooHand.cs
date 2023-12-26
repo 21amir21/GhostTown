@@ -8,7 +8,7 @@ public class BooHand : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy" || collision.tag == "Finish")
+        if (collision.tag == "Enemy" || collision.tag == "Finish" || collision.tag == "Penguin")
         {
 			
             collision.GetComponent<EnemyController>().EnemyTakeDamage(damage);

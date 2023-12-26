@@ -22,7 +22,8 @@ public class ventSpawn : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            vent.sprite = openVent; 
+            vent.sprite = openVent;
+	
         }
     }
 }

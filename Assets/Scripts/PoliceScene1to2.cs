@@ -19,11 +19,7 @@ public class PoliceScene1to2 : MonoBehaviour
         if (other.tag == "Player")
         {
             door.sprite = openDoor;
-			Invoke("NextScene", 1);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
     }
-	void NextScene()
-	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-	}
 }

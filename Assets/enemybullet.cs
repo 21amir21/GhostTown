@@ -6,22 +6,33 @@ public class enemybullet : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
+	private SpriteRenderer spriteRenderer;
     public float force;
     private float timer;
-    private int damage = 50;
+    private int damage = 20;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+       spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
         float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
-    }
+
+		if (player.transform.position.x < transform.position.x)
+		{
+			transform.rotation = Quaternion.identity;
+
+		}
+		else if (player.transform.position.x > transform.position.x)
+		{
+			transform.rotation = Quaternion.identity;
+			spriteRenderer.flipX = false;
+		}
+	}
 
     // Update is called once per frame
     void Update()

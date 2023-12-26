@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class WinZone : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter2D(Collider2D collision)
     {
-		Debug.Log("WinZone");
-		SceneManager.SetActiveScene(SceneManager.GetSceneByName("PoliceScene 3"));
-        SceneManager.UnloadSceneAsync("Puzzle");
-    }
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
 }

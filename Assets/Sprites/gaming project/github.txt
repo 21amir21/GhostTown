@@ -1,0 +1,69 @@
+Completed Features:
+
+Police Chase and Shoot Mechanics:
+
+Successfully implemented a system for two police characters to chase and shoot at the player when within a certain distance.
+Hot Coffee Interaction:
+
+Developed a hot coffee element in the game; however, the current implementation only registers interaction when the player is moving and touches the coffee, not when standing.
+Player Shooting Mechanism:
+
+Implemented the ability for the player to shoot projectiles.
+To Be Implemented:
+
+Hot Coffee Interaction (Standing):
+
+Address the issue where the hot coffee element only works when the player is moving and touching it, not when standing.
+Projectile Directionality:
+
+Enhance the projectile directionality to align with the player's movement, ensuring proper orientation (left or right).
+Enemy Damage System:
+
+Implement a system for the player's projectiles to cause damage to enemies, fostering a dynamic interaction between player and enemy entities.
+Idle Police Eating Donuts:
+
+Introduce an idle action for a police character, allowing them to eat donuts and adding a humorous and interactive element to the game.
+Visible and Invisible Boxes:
+
+Further define the purpose and interaction of visible and invisible box elements in the game.
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+(Completed Features)
+
+Desk and Police Interaction:
+
+Added a desk element to the game.
+Implemented a police character eating donuts , the player must "bunch" the police to proceed.
+
+Police Disappearance on Interaction:
+
+ implemented the functionality for the police character to disappear after being "bunched" by the player.
+Issues to Address:
+
+
+(Issues)
+
+PlayerStats Error on Police Interaction:
+Identified an issue in the PlayerStats script related to player interaction with a police character eating donuts.
+When the player is hit by the police character and subsequently touches hot coffee, a NullReferenceException occurs in PlayerStats.TakeDamage (line 46).
+
+(Work in Progres)
+
+Currently in the process of implementing the functionality to acquire new abilities after defeating a police character who is eating donuts.
+
+
+(To-do)
+
+Implement visible and invisible boxes in the game environment.
+Create interactive events triggered by specific conditions.
+Design and incorporate doors into the game environment.
+Enable the enemy to take damage, establishing a combat mechanism for player interaction.

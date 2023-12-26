@@ -7,6 +7,7 @@ public class BrokenLadder21 : MonoBehaviour
     public GameObject fixedLadder;
     public Transform screwDriver;
     public GameObject player;
+	public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +30,20 @@ public class BrokenLadder21 : MonoBehaviour
             //if player aquired crab
             if (FindObjectOfType<PlayerMovement>().screwDriverIsAccquired)
             {
-                gameObject.SetActive(false);
-                fixedLadder.SetActive(true);
-                FindObjectOfType<ScrewDriver>().inActivateScrewDriver();
+				AudioManager.instance.PlaySingle(clip);
+				Invoke("FixeLadder", 2f);
+               
 
             }
 
 
         }
     }
+	void FixeLadder()
+	{
+		gameObject.SetActive(false);
+		fixedLadder.SetActive(true);
+		FindObjectOfType<ScrewDriver>().inActivateScrewDriver();
+	}
+
 }

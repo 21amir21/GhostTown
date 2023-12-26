@@ -17,7 +17,7 @@ public class DamagingGround : MonoBehaviour
             if (Time.time >= nextDamageTime)
             {
                 // Deal damage to the player
-                FindObjectOfType<PlayerStats>().TakeDamage(damageAmount);
+                FindObjectOfType<PlayerStats>().TakeDamageAndDie(damageAmount);
 
                 // Set the next time damage will be dealt
                 nextDamageTime = Time.time + damageInterval;
@@ -33,7 +33,7 @@ public class DamagingGround : MonoBehaviour
 			if (Time.time >= nextDamageTime)
 			{
 				// Deal damage to the player
-				FindObjectOfType<PlayerStats>().TakeDamage(damageAmount);
+				FindObjectOfType<PlayerStats>().TakeDamageAndDie(damageAmount);
 
 				// Set the next time damage will be dealt
 				nextDamageTime = Time.time + damageInterval;
