@@ -33,7 +33,7 @@ public class Treasure : MonoBehaviour
         //if player collided with treasure while it's not opened
         if(collision.tag=="SwimPlayer" && !(sprite == OpentreasureSprite))
         {
-            FindObjectOfType<SwimmerPlayerStats>().takeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
         }
        
     }

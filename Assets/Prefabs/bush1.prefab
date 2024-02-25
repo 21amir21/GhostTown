@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6896404156440199687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.2983, y: -1.7483, z: 0}
-  m_LocalScale: {x: 2.3324196, y: 1.4578304, z: 0.12997311}
+  m_LocalScale: {x: 3.7732406, y: 2.4430263, z: 2.2435727}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d635776187f9445915fd6aad71d30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 10
+  amplitude: 0.2
+  frequency: 1
 --- !u!60 &7770095130673540298
 PolygonCollider2D:
   m_ObjectHideFlags: 0

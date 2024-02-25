@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
   
 	public bool aquiredKey = false;
 
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 		rotatingPlatform = null;
 		animator = GetComponent<Animator>();
 		defultRotation = Quaternion.identity; // refers to "no rotation" which is 0x, 0y, 0z
-    screwDriverIsAccquired = false; // Amir's
+		screwDriverIsAccquired = false; // Amir's
 	}
   
 	// Update is called once per frame
@@ -146,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 			rigidBody.drag = 0; // resets drag as it was changed from sand
 			rigidBody.gravityScale = 1; // resets gravity as it was changed from rotating platform
 			rigidBody.freezeRotation = true; // freezes z rotation as it was unfrozen from rotating platform
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 0.1f); // resets the rotation of the player from rotating platform
+			transform.rotation = Quaternion.RotateTowards(transform.rotation, defultRotation, 0.5f); // resets the rotation of the player from rotating platform
 			rotatingPlatform = null;
 			platform = null;
 		}

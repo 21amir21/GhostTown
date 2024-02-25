@@ -6,7 +6,6 @@ public class EnemyController : MonoBehaviour
 {
 	// take damage of the enemy
 	public int health = 10;
-	public SpriteRenderer spriteRenderer;
 
 	//VARIABLES FOR ALL ENEMIES SPEED AND DAMAGE //
 	public float speed;
@@ -18,7 +17,7 @@ public class EnemyController : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			FindObjectOfType<PlayerStats>().TakeDamage(damage);
+			FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
 		}
 	}
 
@@ -27,9 +26,6 @@ public class EnemyController : MonoBehaviour
 		isFacingRight = !isFacingRight;
 		transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 	}
-
-
-
 
 	public void EnemyTakeDamage(int damage)
 	{
@@ -49,17 +45,8 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-   
-
-	// Start is called before the first frame update
-	void Start()
+	private void OnDestroy()
 	{
-		
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		
+		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
 	}
 }

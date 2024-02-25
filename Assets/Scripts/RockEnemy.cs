@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class RockEnemy : MonoBehaviour
 {
-    public int damage=1;
+	private float timer = 0;
+	private float duration = 1.5f;
+
+    public int damage = 20;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndDie(damage);
         }
     }
 
@@ -22,6 +25,9 @@ public class RockEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ((timer += Time.deltaTime) >= duration)
+		{
+			Destroy(gameObject);
+		}
     }
 }

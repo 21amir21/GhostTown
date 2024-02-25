@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 public class PlayerStats : MonoBehaviour
 {
 	public int health; // TODO: Patrick make all private
@@ -12,10 +15,13 @@ public class PlayerStats : MonoBehaviour
 	public bool isImmune = false;
 	public float immunityDura1on = 1.5f; //el w2t ely sonic 3mal ynor w ytfy
 	private float immunityTime = 0f;
+    private int barrelCount = 0;
+	public TextMeshProUGUI barrelcountText;
 
-	// public int coinsCollected = 0;
-	void Start()
+    // public int coinsCollected = 0;
+    void Start()
 	{
+		FindObjectOfType<AbilityManager>().abilityGained = false;
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 		health = maxHealth;
 	}
@@ -45,10 +51,13 @@ public class PlayerStats : MonoBehaviour
 		if (isImmune == false)
 		{
 			health -= damage;
+
 			if (health < 0)
 				health = 0;
+
 			if (health == 0)
 			{
+				health = maxHealth;
 				Debug.Log("Gameover"); // TODO: add game over splash screen
 				FindObjectOfType<LevelManager>().RespawnPlayer();
 			}
@@ -74,19 +83,6 @@ public class PlayerStats : MonoBehaviour
 		}
 	}
 
-	/// <summary>
-	/// Make sure to put a timer during the function call so the damage is not applied every frame
-	/// </summary>
-	public void TakeDamageOverTime(int damage) // TODO: remove if not used
-	{
-		health -= damage;
-		if (health < 0f)
-			health = 0;
-		if (health == 0)
-		{
-			KillPlayer();
-		}
-	}
 	void PlayHitReac1on()
 	{
 		isImmune = true;
@@ -107,12 +103,24 @@ public class PlayerStats : MonoBehaviour
 
 	public void KillPlayer()
 	{
+		if (FindObjectOfType<AbilityManager>().abilityGained == true)
+		{
+			Debug.Log("ability removed");
+			FindObjectOfType<AbilityManager>().abilityCount--;
+			FindObjectOfType<AbilityManager>().abilityGained = false;
+		}
 		Debug.Log("Gameover"); // TODO: add game over splash screen
-		FindObjectOfType<LevelManager>().RestartScene();
+		SceneManager.LoadScene(34, LoadSceneMode.Additive);
 	}
 
-	// public void CollectCoin(int coinValue)
-	// {
-	// coinsCollected = coinsCollected + coinValue;
-	// }
-} //Class
+	public void CollectBarrel()
+	{
+		barrelCount++;
+		barrelcountText.text = "" + barrelCount;
+	}
+
+	public int GetBarrelCount()
+	{
+		return barrelCount;
+	}
+}

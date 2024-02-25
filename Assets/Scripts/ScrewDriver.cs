@@ -11,7 +11,7 @@ public class ScrewDriver : MonoBehaviour
     void Start()
     {
 
-        player = GameObject.Find("Player");
+        player = GameObject.Find("PlayerwithAnimandHand");
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class ScrewDriver : MonoBehaviour
     public void inActivateScrewDriver()
     {
         //TODO: change tag
-
+		AudioManager.instance.PlaySingle(null);
         Debug.Log("Here ya Amir");
         transform.parent = null;
         this.gameObject.SetActive(false);

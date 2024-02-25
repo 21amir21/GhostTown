@@ -7,13 +7,6 @@ public class WalkingEnemy : EnemyController
    
     public float leftLimit;
     public float rightLimit;
-    void Start()
-    {
-    }
-    void Update()
-    {
-      
-    }
 
    void FixedUpdate()
     {
@@ -25,17 +18,14 @@ public class WalkingEnemy : EnemyController
             {
                 Flip();
             }
-            
         }
         else
         {
-            
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, this.GetComponent<Rigidbody2D>().velocity.y);
             if (transform.position.x <= leftLimit)
             {
                 Flip();
             }
-
         }
     }
 
@@ -50,9 +40,10 @@ public class WalkingEnemy : EnemyController
         {
             Flip();
         }
+	
         if(collider.tag == "Player")
         {
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<PlayerStats>().TakeDamageAndRespawn(damage);
             Flip();
         }
     }

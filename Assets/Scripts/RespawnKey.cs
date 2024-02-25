@@ -21,9 +21,9 @@ public class RespawnKey : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Player" && count == 0)
+        if (collision.tag == "Player" && count == 0)
         {
             count++;
             FindObjectOfType<PlayerMovement>().aquiredKey = true;

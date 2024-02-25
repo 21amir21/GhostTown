@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 6542134799734071351}
   - component: {fileID: 6542134799734071350}
   - component: {fileID: 6542134799734071337}
+  - component: {fileID: 5599146301800965448}
+  - component: {fileID: 1606820593}
   m_Layer: 0
   m_Name: policeman_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &6542134799734071350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,11 +176,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1536abe6f72f8884f8148c74e2d353ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  health: 25
+  speed: 0
+  damage: 20
+  isFacingRight: 0
+  isPoliceWithKey: 0
+  moveSpeed: 3
+  detectionRange: 10
+  bulletpos: {fileID: 6542134800208355521}
+  bulletPrefab: {fileID: 7790091787065945394, guid: 62474c0a7221cf04ea89232b8a960f16, type: 3}
+  invisibleBox: {fileID: 7595164244518153345, guid: a7398eccf9b9fab4988d860005c10fac, type: 3}
+--- !u!95 &5599146301800965448
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542134799734071336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59df0ebcfbeb7d8499f1d6a46592d675, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1606820593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542134799734071336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9af6f90e6047448a436e759fc0929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  speed: 0
+  damage: 0
+  isFacingRight: 0
+  isPoliceWithKey: 0
   moveSpeed: 3
   detectionRange: 5
   bulletpos: {fileID: 6542134800208355521}
   bulletPrefab: {fileID: 7790091787065945394, guid: 62474c0a7221cf04ea89232b8a960f16, type: 3}
+  invisibleBox: {fileID: 0}
+  invlock: {fileID: 0}
 --- !u!1 &6542134800208355520
 GameObject:
   m_ObjectHideFlags: 0

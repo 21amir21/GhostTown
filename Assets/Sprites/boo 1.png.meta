@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 532bbab05b89c4949bba1eade532566b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boo_0
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1757
+        width: 168
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ad6f2dd393bf14caa1b2cce17f12df
+      internalID: -2074681797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1753
+        width: 159
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e42f2d27638c948969aa5eebced0d6
+      internalID: 1017563160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1762
+        width: 147
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8690c80c0c64e409633ad01bd9474a
+      internalID: -1754495979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_4
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1756
+        width: 150
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec077800f4ccc63498f13115e38baf6a
+      internalID: -1639885374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1514
+        width: 166
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c276d91323f261547808437c688a9966
+      internalID: -217316229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1516
+        width: 191
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa347549516fa4ca75d363af29d7d6
+      internalID: -1199624899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_11
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1498
+        width: 166
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96d3ffeaa1bccf439b88b19906dfcfc
+      internalID: 991946736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1505
+        width: 169
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64a6c9c667db374aa7e88d2bd73135c
+      internalID: -1857724754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1234
+        width: 198
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f536fb3dfccbc46b1c8abafd53223c
+      internalID: 1572995495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_21
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1224
+        width: 195
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4c6ea13cea6b1438e1a999983d957a
+      internalID: 2045604008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_22
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1231
+        width: 169
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19746d3f3f477a94eafeb1917fe4aea7
+      internalID: 505999215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_23
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1243
+        width: 175
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfa66c9a0dbf9d4084e396c7602d57d
+      internalID: 1741247254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_30
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 981
+        width: 166
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6f43df31962b84e93c417e1819927e
+      internalID: -837078715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_31
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 980
+        width: 168
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9489664c70047d499a1ca513b3acd2a
+      internalID: -1078350783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_32
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 992
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06564017cfe09814d94f23845cbc1d35
+      internalID: 1817309304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_35
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 757
+        width: 156
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a1bcadcf542a44854f41df4e7a7fc
+      internalID: 688375809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_36
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 741
+        width: 181
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d2e089be8b566468b86c39a55e666e
+      internalID: 1762855167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_37
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 735
+        width: 206
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446646139aa244a48bde6a9ff31e3301
+      internalID: 818969266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_41
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 529
+        width: 173
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b197c6c71f03b42834be521f81e33b
+      internalID: 975316262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 531
+        width: 197
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595fc5956f3145941b82a666e3f6eddb
+      internalID: 1350148156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_46
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 299
+        width: 187
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cd770f6c3ed2c45939c436bb4b872a
+      internalID: 1841888071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_47
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 281
+        width: 201
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22359956e935321459515835fac39341
+      internalID: -321123742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 165
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e77c6675ef4904db26f0a3428568b2
+      internalID: 372544262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_54
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 160
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548b9c79eed057e4087f0437c2233929
+      internalID: -159614101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_55
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 151
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea0d16555cda8a49b08eccc72ac292e
+      internalID: -894636598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_56
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 10
+        width: 141
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760a81e21e6783e40813524f5476a826
+      internalID: 930758575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_60
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 737
+        width: 195
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978d0de2021e7084383ff071cec912b4
+      internalID: 839624502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_61
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 532
+        width: 175
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dc4f9c457e2894cb995db22989b38d
+      internalID: -27707214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_62
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 519
+        width: 181
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4e5c36538b9b6449bb4eca9c7711e5
+      internalID: -1065341316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_63
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 277
+        width: 184
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5134dd22fc928243af2946c0e21b44e
+      internalID: 1022492993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boo_64
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 268
+        width: 204
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b73a9da3c1d54d9085c56f27b11e2
+      internalID: -874924620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boo_12: -1466780318
+      boo_27: -768336652
+      boo_19: 1294041950
+      boo_34: -1527490200
+      boo_18: 616973480
+      boo_29: 419411327
+      boo_10: 854261937
+      boo_7: 1438025804
+      boo_36: 1762855167
+      boo_60: 1435536670
+      boo_5: -227293748
+      boo_28: 1574606716
+      boo_13: -1857724754
+      boo_43: 732217634
+      boo_54: -159614101
+      boo_45: -1425769796
+      boo_55: -894636598
+      boo_0: -2074681797
+      boo_31: -1078350783
+      boo_50: -10239084
+      boo_17: -643516707
+      boo_22: 505999215
+      boo_24: -1279486226
+      boo_48: 722831640
+      boo_26: -479384322
+      boo_32: 1817309304
+      boo_23: 1741247254
+      boo_14: -115741900
+      boo_20: 1572995495
+      boo_53: 372544262
+      boo_61: 414544592
+      boo_47: -321123742
+      boo_44: 2072241151
+      boo_16: 27308302
+      boo_58: -672864415
+      boo_63: -27707214
+      boo_56: 930758575
+      boo_35: 688375809
+      boo_6: -274063302
+      boo_51: 1801861109
+      boo_1: 1017563160
+      boo_8: -217316229
+      boo_64: -1065341316
+      boo_21: 2045604008
+      boo_11: 991946736
+      boo_3: -1754495979
+      boo_57: 1642822945
+      boo_4: -1639885374
+      boo_62: 839624502
+      boo_49: 1291741456
+      boo_59: 831826816
+      boo_37: 818969266
+      boo_52: 644805093
+      boo_30: -837078715
+      boo_46: 1841888071
+      boo_41: 975316262
+      boo_9: -1199624899
+      boo_39: -986572405
+      boo_25: 1895091376
+      boo_33: 1954455172
+      boo_42: 1350148156
+      boo_15: -1217808550
+      boo_38: -1544762367
+      boo_40: 1633211711
+      boo_2: 986505187
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

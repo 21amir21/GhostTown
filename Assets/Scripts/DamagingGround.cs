@@ -17,12 +17,28 @@ public class DamagingGround : MonoBehaviour
             if (Time.time >= nextDamageTime)
             {
                 // Deal damage to the player
-                FindObjectOfType<PlayerStats>().TakeDamage(damageAmount);
+                FindObjectOfType<PlayerStats>().TakeDamageAndDie(damageAmount);
 
                 // Set the next time damage will be dealt
                 nextDamageTime = Time.time + damageInterval;
             }
         }
     }
+
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.collider.CompareTag("Player"))
+		{
+			// Check if enough time has passed to deal damage again
+			if (Time.time >= nextDamageTime)
+			{
+				// Deal damage to the player
+				FindObjectOfType<PlayerStats>().TakeDamageAndDie(damageAmount);
+
+				// Set the next time damage will be dealt
+				nextDamageTime = Time.time + damageInterval;
+			}
+		}
+	}
 }
 
