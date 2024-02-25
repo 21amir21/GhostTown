@@ -1,0 +1,1333 @@
+fileFormatVersion: 2
+guid: 39bd392fce7cac249871823f74963bac
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: constructionworkerFinal_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 471
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2072ae7f81432ee419abf7e46d203341
+      internalID: -694040487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 565
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0798ce173fd13b14db50cb4fd9de8e69
+      internalID: 125334287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 565
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7147c93eec4afc54b81a6f70137c2fd9
+      internalID: -285615085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 509
+        width: 108
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7515e1b60a784c41988cdf891fe3854
+      internalID: -878731783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_4
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 248
+        width: 301
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e72bd3ffccb747aaa99cef3487e57
+      internalID: -2065700725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 472
+        width: 82
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d1c48e0e001144aa4b063ecb8bf59c
+      internalID: 1241312433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 472
+        width: 85
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961d2d9fcc787ee42bbf63150badb913
+      internalID: -696605893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 471
+        width: 84
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676cb39fb189eef4ea26fa8a01895f97
+      internalID: 1414889171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_8
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 469
+        width: 83
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4650ec04c6619194cbb70e273898b9af
+      internalID: -2128981801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 370
+        width: 54
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2e75e2dc5710c4d95b03fadb479c30
+      internalID: -837612973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 372
+        width: 58
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce742aedbcebf384f9b2b47f27358869
+      internalID: -675974218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 373
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8f49aa77c4e56498e2be5fe9813722
+      internalID: -1497707879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 371
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fa4b6389d24474096be0c27e666020
+      internalID: -431360957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 373
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74086728fdc5c654b82f852c6ce474fe
+      internalID: -285483723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 263
+        width: 66
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804a901e57d716643850fd24bb257924
+      internalID: 374149001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 263
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5427f39aa9a784c926bebe398af527
+      internalID: 2107443622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 263
+        width: 63
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305d5b05326b9f34787b77ab3332b6a5
+      internalID: 447692836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 263
+        width: 81
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dd44388775b1540aa02c18b475f14a
+      internalID: 366797132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_18
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 263
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e02f0803784b4428ae30821154f3e7
+      internalID: 220208981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 262
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442add195266c5a4b86ec34f6e23df0d
+      internalID: -212113160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_20
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 226
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73481f7a6124e374eb4b2b895a7d66cc
+      internalID: 1722685438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 249
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc3405ebb3c13741b7637773d77b5a5
+      internalID: -1722827274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_22
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 141
+        width: 90
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fda1a33d9715324ca6f747085af0ec6
+      internalID: 238604483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 141
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c44c957fe300b443a64fefbd970fb43
+      internalID: -171122990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 217
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd48f74496dc14a4081588ec36491d30
+      internalID: -584250491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 141
+        width: 48
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4cfc0781dd36a46961031ac7adf299
+      internalID: -977345461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_26
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 141
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9334442f5847a744ba228e18813d4129
+      internalID: 687337943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_27
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 142
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3782e7a634e8044f9b197eba66f87ee
+      internalID: -80880407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_28
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 141
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea978565a53bb4c85a38a2db0de8f0
+      internalID: -672999464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_29
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 141
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53e5de322e5f464db68dda7a5b73339
+      internalID: 2049334926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_30
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 142
+        width: 47
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cacf626cea1de346bddd95d169d5ac4
+      internalID: -1739740938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_31
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 141
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa34cd73645d4034396bb3fe65a2b72b
+      internalID: -1475010788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_32
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 142
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da81aeb2ca22e654eaba617fc3476633
+      internalID: -1835025409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_33
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 142
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243e9a6c5d8ee674f9fff52cb19bcda5
+      internalID: 1338426039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_34
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 190
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9e262141401b44182d553bbbd05898
+      internalID: -2124438425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_35
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 142
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b205cbcb8191bd40be3e4eef0d802c7
+      internalID: 1845982499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 197
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e832bae6a16e5448c33349d19e479a
+      internalID: 1620265981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 155
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9505a74fc5cd14b9b8703f15cca55f
+      internalID: -1932796241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_38
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 188
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ba25212645477458595b1648c8482a
+      internalID: -1660218941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_39
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 138
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a2fb4dc30d9b442bb27e9e431e0cfc
+      internalID: 1457093958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_40
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 179
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7b5d6b30757e1498a1b124b355f516
+      internalID: -1320682933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_41
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 149
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f92804d201b7e48ab650bca58bfb41
+      internalID: 2123098750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_42
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 162
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db6999baa63f66449357fab1aa26240
+      internalID: 1275932709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 34
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660aec83a18382f4da9d01b76b60b9fb
+      internalID: 2125573699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_44
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 35
+        width: 53
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2505fe44fdefc174c8c691a290d95b11
+      internalID: -1400235824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_45
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 35
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4707cc0096bd445a50e3b4cfad96f6
+      internalID: -840469407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_46
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 35
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553929464047db2458872d786702d071
+      internalID: 617234610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_47
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 34
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779d202400f27004c931a528b735d103
+      internalID: -1593666548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_48
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 35
+        width: 52
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed92d74be848da4f9eac9713bdad913
+      internalID: 176720995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_49
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 35
+        width: 49
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a9e1a264a20de40a5baf340d154a84
+      internalID: -1237186102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_50
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 34
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7195bb637eeb92488ea423bc6f6bb91
+      internalID: 2058712685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_51
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 34
+        width: 60
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78682fb5a56a3140a6a97814eb7e737
+      internalID: -968010369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_52
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 35
+        width: 61
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6a43a5e8b6fb749aba2122f1735531
+      internalID: -449180883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 35
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512ac365e7a5f87428fcbee09b21a370
+      internalID: 268787348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: constructionworkerFinal_54
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 35
+        width: 54
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5723065704a8fd245beba8497ce3d022
+      internalID: -608897169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      constructionworkerFinal_48: 176720995
+      constructionworkerFinal_11: -1497707879
+      constructionworkerFinal_33: 1338426039
+      constructionworkerFinal_50: 2058712685
+      constructionworkerFinal_27: -80880407
+      constructionworkerFinal_43: 2125573699
+      constructionworkerFinal_32: -1835025409
+      constructionworkerFinal_42: 1275932709
+      constructionworkerFinal_47: -1593666548
+      constructionworkerFinal_37: -1932796241
+      constructionworkerFinal_18: 220208981
+      constructionworkerFinal_21: -1722827274
+      constructionworkerFinal_39: 1457093958
+      constructionworkerFinal_31: -1475010788
+      constructionworkerFinal_38: -1660218941
+      constructionworkerFinal_15: 2107443622
+      constructionworkerFinal_45: -840469407
+      constructionworkerFinal_22: 238604483
+      constructionworkerFinal_5: 1241312433
+      constructionworkerFinal_29: 2049334926
+      constructionworkerFinal_40: -1320682933
+      constructionworkerFinal_19: -212113160
+      constructionworkerFinal_28: -672999464
+      constructionworkerFinal_0: -694040487
+      constructionworkerFinal_8: -2128981801
+      constructionworkerFinal_14: 374149001
+      constructionworkerFinal_7: 1414889171
+      constructionworkerFinal_36: 1620265981
+      constructionworkerFinal_24: -584250491
+      constructionworkerFinal_30: -1739740938
+      constructionworkerFinal_46: 617234610
+      constructionworkerFinal_9: -837612973
+      constructionworkerFinal_26: 687337943
+      constructionworkerFinal_1: 125334287
+      constructionworkerFinal_12: -431360957
+      constructionworkerFinal_6: -696605893
+      constructionworkerFinal_25: -977345461
+      constructionworkerFinal_17: 366797132
+      constructionworkerFinal_34: -2124438425
+      constructionworkerFinal_2: -285615085
+      constructionworkerFinal_13: -285483723
+      constructionworkerFinal_52: -449180883
+      constructionworkerFinal_35: 1845982499
+      constructionworkerFinal_20: 1722685438
+      constructionworkerFinal_53: 268787348
+      constructionworkerFinal_23: -171122990
+      constructionworkerFinal_51: -968010369
+      constructionworkerFinal_49: -1237186102
+      constructionworkerFinal_54: -608897169
+      constructionworkerFinal_44: -1400235824
+      constructionworkerFinal_10: -675974218
+      constructionworkerFinal_3: -878731783
+      constructionworkerFinal_41: 2123098750
+      constructionworkerFinal_4: -2065700725
+      constructionworkerFinal_16: 447692836
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
