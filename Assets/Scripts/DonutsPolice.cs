@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class DonutsPolice : EnemyController
 {
-    public ABShooting playerShoot;
+	public ABShooting playerShoot;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerShoot = FindObjectOfType<ABShooting>();
-    }
+	// Start is called before the first frame update
+	void Start()
+	{
+		playerShoot = FindObjectOfType<ABShooting>();
+	}
 
-    private void OnDestroy()
-    {
-        FindObjectOfType<AbilityManager>().addAbility();
+	private void OnDestroy()
+	{
+		FindObjectOfType<AbilityManager>().addShooting();
 		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
 	}
 

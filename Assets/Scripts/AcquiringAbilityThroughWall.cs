@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class AcquiringAbilityThroughWall : MonoBehaviour
 {
-
-    private void OnDestroy()
-    {
-        FindObjectOfType<AbilityManager>().addAbility();
-    }
+	private void OnDestroy()
+	{
+		FindObjectOfType<AbilityManager>().addConstruction();
+	}
 }
