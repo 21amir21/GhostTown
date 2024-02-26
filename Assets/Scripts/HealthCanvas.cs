@@ -11,20 +11,6 @@ public class HealthCanvas : MonoBehaviour
 	public float health;
 	public UnityEngine.UI.Image healthBar;
 
-	public TextMeshProUGUI killCount;
-	public TextMeshProUGUI totalKillsNeeded;
-	public int killCountInt = 0;
-
-	//// barrels
-	//public int barrelCountInt = 0;
-	//public GameObject barrelPanel;
-	//public TextMeshProUGUI barrelCount;
-	//public TextMeshProUGUI totalBarrelCount;
-
-	//// timer
-	//public GameObject timerPanel;
-	//public TextMeshProUGUI timerCount;
-
 	// ability icons
 	public int abilityCount;
 	public UnityEngine.UI.Image boxingGlove;
@@ -40,30 +26,13 @@ public class HealthCanvas : MonoBehaviour
 		brickWall.enabled = false;
 		gun.enabled = false;
 		tafa.enabled = false;
-
-		killCount.text = "";
-		totalKillsNeeded.text = "";
-
-		//timerPanel.SetActive(false);
-		//barrelPanel.SetActive(false);
-		player = FindObjectOfType<PlayerStats>().gameObject;
-		totalKillsNeeded.text = "" + FindObjectOfType<EndOfLevel>().numberOfPeople;
-		// Abilities dont work
-		// test the rest
-
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		health = player.GetComponent<PlayerStats>().health;
+		health = FindObjectOfType<PlayerStats>().health;
 		healthBar.fillAmount = health / 100;
-
-		killCountInt = FindObjectOfType<EndOfLevel>().numberOfPeopleKilled;
-		killCount.text = "" + killCountInt;
-
-		//barrelCountInt = FindObjectOfType<PlayerStats>().GetBarrelCount();
-		//barrelCount.text = "" + barrelCountInt;
 
 		abilityCount = FindObjectOfType<AbilityManager>().currentAbility;
 		switch (abilityCount)
@@ -81,16 +50,20 @@ public class HealthCanvas : MonoBehaviour
 				tafa.enabled = false;
 				break;
 			case 2:
-				boxingGlove.enabled = false;
-				brickWall.enabled = false;
-				gun.enabled = true;
-				tafa.enabled = false;
-				break;
-			case 3:
-				boxingGlove.enabled = false;
-				brickWall.enabled = false;
-				gun.enabled = false;
-				tafa.enabled = true;
+				if (FindObjectOfType<AbilityManager>().tafaGained) // if toxic ability is gained
+				{
+					boxingGlove.enabled = false;
+					brickWall.enabled = false;
+					gun.enabled = false;
+					tafa.enabled = true;
+				}
+				else // toxic ability not gained
+				{
+					boxingGlove.enabled = false;
+					brickWall.enabled = false;
+					gun.enabled = true;
+					tafa.enabled = false;
+				}
 				break;
 			default:
 				break;

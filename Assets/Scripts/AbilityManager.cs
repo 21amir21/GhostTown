@@ -10,6 +10,7 @@ public class AbilityManager : MonoBehaviour
 	private static AbilityManager instance = null;
 	private bool isSwimmerScene2 = false;
 	public bool abilityGained = false;
+	public bool tafaGained = false;
 
 	private KeyCode switchAbility = KeyCode.LeftAlt;
 	private KeyCode useAbility = KeyCode.Space;
@@ -40,12 +41,6 @@ public class AbilityManager : MonoBehaviour
 				nextAbility();
 		}
 
-		if (FindObjectOfType<RotatingRod>())
-		{
-			if (currentAbility == 2)
-				nextAbility();
-		}
-
 		if (GameObject.FindWithTag("SwimPlayer"))
 		{
 			isSwimmerScene2 = true;
@@ -70,13 +65,13 @@ public class AbilityManager : MonoBehaviour
 		//			break;
 		//		case 2: // Shoot
 		//			AudioManager.instance.PlaySingle(clip2);
-					
+
 		//			break;
 		//		default:
 		//			break;
 		//	}
 		//}
-		if ((Input.GetKeyDown(useAbility) && !isSwimmerScene2)  )
+		if ((Input.GetKeyDown(useAbility) && !isSwimmerScene2))
 		{
 			switch (currentAbility)
 			{
@@ -86,9 +81,6 @@ public class AbilityManager : MonoBehaviour
 					break;
 				case 2: // Shoot
 					AudioManager.instance.PlaySingle(clip2);
-					FindObjectOfType<ABShooting>().Shooting();
-					break;
-				case 3: // Tafa
 					FindObjectOfType<ABShooting>().Shooting();
 					break;
 				default:
@@ -102,12 +94,19 @@ public class AbilityManager : MonoBehaviour
 		}
 	}
 
-	public void addAbility()
+	public void addConstruction()
 	{
-		abilityCount++;
-		abilityGained = true;
+		abilityCount = 1;
+	}
 
-		Debug.Log("Ability gained");
+	public void addShooting()
+	{
+		abilityCount = 2;
+	}
+
+	public void addTafa()
+	{
+		tafaGained = true;
 	}
 
 	public void nextAbility()
