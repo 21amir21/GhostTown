@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
 	public void Flip()
 	{
 		isFacingRight = !isFacingRight;
-		transform.localScale = new Vector3(-(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+		transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 	}
 
 	public void EnemyTakeDamage(int damage)

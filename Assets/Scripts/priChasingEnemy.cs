@@ -53,11 +53,11 @@ public class priChasingEnemy : EnemyController
                 rb.velocity = direction * moveSpeed;
 
                 // Flip the enemy sprite based on player position
-                if (player.position.x > transform.position.x)
-                {
-                    // Player is on the right side of the enemy
-                    transform.localScale = new Vector3(-3.2897f, 3.0096f, 1); // Flip the sprite
-                }
+                //if (player.position.x > transform.position.x)
+                //{
+                //    // Player is on the right side of the enemy
+                //    transform.localScale = new Vector3(-3.2897f, 3.0096f, 1); // Flip the sprite
+                //}
                 //else
                 //{
                 //    // Player is on the left side of the enemy

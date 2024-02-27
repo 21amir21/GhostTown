@@ -15,7 +15,6 @@ public class DialogManager : MonoBehaviour
 
 	void Start()
 	{
-		
 		StartCoroutine(StartDialog());
 	}
 

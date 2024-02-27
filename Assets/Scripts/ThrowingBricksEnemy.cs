@@ -7,7 +7,8 @@ public class ThrowingBricksEnemy : MonoBehaviour
 {
 
     public Transform firePoint;
-    public GameObject brick;
+    public GameObject brickLeft;
+	public GameObject brickRight;
     private  float duration = 2f;
     private float timer = 0f;
 
@@ -32,6 +33,13 @@ public class ThrowingBricksEnemy : MonoBehaviour
 
     public void ThrowBrick()
     {
-        Instantiate(brick, firePoint.position, firePoint.rotation);
+		if (transform.localScale.x > 0)
+		{
+			Instantiate(brickRight, firePoint.position, firePoint.rotation);
+		}
+		else
+		{
+			Instantiate(brickLeft, firePoint.position, firePoint.rotation);
+		}
     }
 }

@@ -13,12 +13,12 @@ public class Brick : MonoBehaviour
     void Start()
     {
 
-        standingEnemy = GameObject.FindWithTag("Enemy");
-        if(standingEnemy.transform.localScale.x < 0 )
-        {
-            speed = -speed;
-            transform.localScale = new Vector3((-transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
+        //standingEnemy = GameObject.FindWithTag("Enemy");
+        //if(standingEnemy.transform.localScale.x < 0 )
+        //{
+        //    speed = -speed;
+        //    transform.localScale = new Vector3((-transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        //}
       
             
         rb = GetComponent<Rigidbody2D>();   

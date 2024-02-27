@@ -18,7 +18,7 @@ public class FlickeringLight : MonoBehaviour
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(Random.Range(rangeBeginning, rangeEnd));
+			yield return new WaitForSeconds(rangeBeginning);
 			
 			flickeringLight.enabled = !flickeringLight.enabled;
 		}
