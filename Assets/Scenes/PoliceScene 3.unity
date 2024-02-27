@@ -234,34 +234,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7766644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6542134799734071336, guid: 3336e92a2081d564a8e0007f1fc2d3d4, type: 3}
-  m_PrefabInstance: {fileID: 567014698}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7766645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7766644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9af6f90e6047448a436e759fc0929f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  speed: 0
-  damage: 0
-  isFacingRight: 0
-  isPoliceWithKey: 0
-  moveSpeed: 3
-  detectionRange: 5
-  bulletpos: {fileID: 1578968200}
-  bulletPrefab: {fileID: 7790091787065945394, guid: 62474c0a7221cf04ea89232b8a960f16, type: 3}
-  invisibleBox: {fileID: 0}
-  invlock: {fileID: 763936742}
 --- !u!1 &20857337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1180,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446209936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675507530669, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1984911015}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529080455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1416,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1606820593, guid: 3336e92a2081d564a8e0007f1fc2d3d4, type: 3}
+      propertyPath: invlock
+      value: 
+      objectReference: {fileID: 763936742}
+    - target: {fileID: 1606820593, guid: 3336e92a2081d564a8e0007f1fc2d3d4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6542134799734071336, guid: 3336e92a2081d564a8e0007f1fc2d3d4, type: 3}
       propertyPath: m_Name
       value: policeman_0 (2)
@@ -1936,6 +1927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfPeople: 2
   numberOfPeopleKilled: 0
+  peoplecount: {fileID: 1613503065}
+  killcount: {fileID: 446209936}
 --- !u!1 &763936742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +3726,7 @@ MonoBehaviour:
   currentAbility: 0
   abilityCount: 2
   abilityGained: 0
+  tafaGained: 0
   clip: {fileID: 0}
   clip2: {fileID: 0}
 --- !u!4 &1470748504
@@ -3830,11 +3824,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521666791}
   m_CullTransparentMesh: 1
---- !u!4 &1578968200 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6542134800208355521, guid: 3336e92a2081d564a8e0007f1fc2d3d4, type: 3}
-  m_PrefabInstance: {fileID: 567014698}
+--- !u!114 &1613503065 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675010964346, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1984911015}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1882957150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4118,7 +4118,8 @@ PrefabInstance:
       propertyPath: openDoor
       value: 
       objectReference: {fileID: 21300000, guid: 5e94d1495f7efe84ca15e7f7e3e8be6a, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 572519712193250159, guid: 37d641aab2d2bb541b3c2b0d95539de8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 37d641aab2d2bb541b3c2b0d95539de8, type: 3}
 --- !u!1 &2021918689
 GameObject:

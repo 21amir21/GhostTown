@@ -2378,6 +2378,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -21.37, y: -3.41, z: 2.499}
+--- !u!114 &302917904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675507530669, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1656047230}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &332411539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4049,6 +4060,7 @@ MonoBehaviour:
   currentAbility: 0
   abilityCount: 2
   abilityGained: 0
+  tafaGained: 0
   clip: {fileID: 0}
   clip2: {fileID: 0}
 --- !u!4 &523011572
@@ -6541,6 +6553,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094787529}
   m_CullTransparentMesh: 1
+--- !u!114 &1112218481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675010964346, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1656047230}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1130995352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8430,7 +8453,6 @@ GameObject:
   - component: {fileID: 1408741845}
   - component: {fileID: 1408741844}
   - component: {fileID: 1408741847}
-  - component: {fileID: 1408741848}
   m_Layer: 0
   m_Name: vent (2)
   m_TagString: Untagged
@@ -8451,6 +8473,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   policeopenvent: {fileID: 21300000, guid: b2ee8eac3554c2e4ea0c647cbb7b93de, type: 3}
+  numberOfPeople: 4
+  numberOfPeopleKilled: 0
+  peoplecount: {fileID: 1112218481}
+  killcount: {fileID: 302917904}
 --- !u!212 &1408741845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8544,20 +8570,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9212255, y: 1.4053221}
   m_EdgeRadius: 0
---- !u!114 &1408741848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408741843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3783dc6f1fc5d742ad6f14e7fbb3c30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfPeople: 4
-  numberOfPeopleKilled: 0
 --- !u!1001 &1428408465
 PrefabInstance:
   m_ObjectHideFlags: 0

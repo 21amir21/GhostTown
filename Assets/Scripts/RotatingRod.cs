@@ -10,7 +10,7 @@ public class RotatingRod : MonoBehaviour
 
 	private void Start()
 	{
-		FindObjectOfType<PlayerBullet>().toxic = true;
+		FindObjectOfType<AbilityManager>().addTafa();
 	}
 
 	void Update()
