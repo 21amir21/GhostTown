@@ -2026,6 +2026,7 @@ MonoBehaviour:
   flickerDura1on: 0.1
   isImmune: 0
   immunityDura1on: 1.5
+  barrelcountText: {fileID: 0}
 --- !u!95 &942586336
 Animator:
   serializedVersion: 4
@@ -3872,6 +3873,7 @@ MonoBehaviour:
   currentAbility: 0
   abilityCount: 0
   abilityGained: 0
+  tafaGained: 0
   clip: {fileID: 0}
   clip2: {fileID: 0}
 --- !u!4 &1557147745
@@ -5655,8 +5657,26 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1654697269
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6981397977072737269, guid: f7d72be8708b75642aedd778d6335db3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f7d72be8708b75642aedd778d6335db3, type: 3}
+--- !u!1 &2118887015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 563852834741639566, guid: f7d72be8708b75642aedd778d6335db3, type: 3}
+  m_PrefabInstance: {fileID: 2118887014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118887016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118887015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a505d73554de6ae48af0d3c58fb40d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2120347545
 GameObject:
   m_ObjectHideFlags: 0

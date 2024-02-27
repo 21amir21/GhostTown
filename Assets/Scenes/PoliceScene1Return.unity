@@ -234,6 +234,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58531022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675010964346, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1545707786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &243211012
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +811,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381910725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8909608675507530669, guid: ffe2a408411b050419cfad62e80fa4c7, type: 3}
+  m_PrefabInstance: {fileID: 1545707786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &461771339
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfPeople: 1
   numberOfPeopleKilled: 0
+  peoplecount: {fileID: 58531022}
+  killcount: {fileID: 381910725}
 --- !u!1 &621828696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1149,7 @@ MonoBehaviour:
   currentAbility: 0
   abilityCount: 3
   abilityGained: 0
+  tafaGained: 0
   clip: {fileID: 0}
   clip2: {fileID: 0}
 --- !u!4 &699712269

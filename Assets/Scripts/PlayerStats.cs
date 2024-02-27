@@ -24,7 +24,9 @@ public class PlayerStats : MonoBehaviour
 		FindObjectOfType<AbilityManager>().abilityGained = false;
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 		health = maxHealth;
+		barrelcountText.text = "0";
 	}
+
 	// Update is called once per frame
 	void Update()
 	{
