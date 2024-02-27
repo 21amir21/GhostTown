@@ -2200,14 +2200,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4631151557894518562, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -38.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4631151557894518562, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -29.6
-      objectReference: {fileID: 0}
     - target: {fileID: 4631151557894518573, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
       propertyPath: m_text
       value: 8
@@ -2215,14 +2207,6 @@ PrefabInstance:
     - target: {fileID: 4631151557894518573, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4279308703
-      objectReference: {fileID: 0}
-    - target: {fileID: 4631151558393887478, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -38.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4631151558393887478, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 4631151559613733019, guid: 5e5e736e93be22f41964f612a4313fcb, type: 3}
       propertyPath: m_Pivot.x
