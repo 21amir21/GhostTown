@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4166497320844674999}
   - component: {fileID: 4166497320844674996}
-  - component: {fileID: 8580376310337289896}
   - component: {fileID: 3066862443021585434}
+  - component: {fileID: 991311558208896852}
   - component: {fileID: 8753513645971402756}
   m_Layer: 0
   m_Name: Spikes
@@ -87,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8580376310337289896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4166497320844674997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84836de2d2a56824cacac0034d85e44e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 10
-  damageInterval: 1
 --- !u!61 &3066862443021585434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,6 +113,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.0984955, y: 2.1452653}
   m_EdgeRadius: 0
+--- !u!114 &991311558208896852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166497320844674997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc11cefb7a04eae438dbaac684055d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  damageInterval: 1
 --- !u!61 &8753513645971402756
 BoxCollider2D:
   m_ObjectHideFlags: 0
