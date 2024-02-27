@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8339362847956665613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: -0.13, z: 0}
+  m_LocalPosition: {x: 0.46, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,10 +136,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0935929, y: -0.071495414}
+  m_Offset: {x: -0.0058202147, y: -0.071495414}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 0.14999999, y: 0.11, z: 2.35, w: 0.22999999}
+    pivot: {x: 0.2084634, y: 0.4902656}
     oldSize: {x: 3.7, y: 2.3}
     newSize: {x: 0.47, y: 0.88}
     adaptiveTilingThreshold: 0.5
@@ -147,7 +147,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2505785, y: 2.131197}
+  m_Size: {x: 1.3014082, y: 2.131197}
   m_EdgeRadius: 0
 --- !u!61 &8339362848205506524
 BoxCollider2D:
@@ -162,10 +162,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0971844, y: -0.046161324}
+  m_Offset: {x: -0.008616358, y: -0.046161294}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 0.14999999, y: 0.11, z: 2.35, w: 0.22999999}
+    pivot: {x: 0.2084634, y: 0.4902656}
     oldSize: {x: 3.7, y: 2.3}
     newSize: {x: 0.47, y: 0.88}
     adaptiveTilingThreshold: 0.5
@@ -173,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1516938, y: 2.0180962}
+  m_Size: {x: 1.2163961, y: 2.0180962}
   m_EdgeRadius: 0
 --- !u!50 &8339362848205506522
 Rigidbody2D:
@@ -209,7 +209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8339362847956665612}
-  brick: {fileID: 8980231383833906831, guid: 4eecd441e0e73f74b8c1ee578318580a, type: 3}
+  brickLeft: {fileID: 8980231383833906831, guid: 4eecd441e0e73f74b8c1ee578318580a, type: 3}
+  brickRight: {fileID: 8980231383833906831, guid: 6894214b7ce888c4987da583a82f1fc5, type: 3}
 --- !u!114 &8339362848205506520
 MonoBehaviour:
   m_ObjectHideFlags: 0

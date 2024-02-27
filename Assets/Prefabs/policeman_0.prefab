@@ -178,7 +178,7 @@ Transform:
   m_GameObject: {fileID: 5971471319990648313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.0846, y: 8.4029, z: 0}
-  m_LocalScale: {x: 2.8048928, y: 2.8048928, z: 2.8048928}
+  m_LocalScale: {x: 2.017103, y: 2.017103, z: 2.017103}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5971471318887171874}
@@ -226,7 +226,7 @@ SpriteRenderer:
   m_SortingLayerID: 125416817
   m_SortingLayer: 4
   m_SortingOrder: 3
-  m_Sprite: {fileID: -853282133, guid: af2aa3c25c948054c8fbbd9888f7b599, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7bc98b93b0ad5146876d47bf64e756e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -250,18 +250,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01674819, y: -0.40535694}
+  m_Offset: {x: -0.017805517, y: -0.99523807}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.73, y: 1.01}
+    border: {x: 0.17999999, y: 0.11, z: 2.34, w: 0.32}
+    pivot: {x: 0.2127889, y: 0.5}
+    oldSize: {x: 3.7, y: 2.3}
     newSize: {x: 0.66, y: 0.94}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6265036, y: 0.10548261}
+  m_Size: {x: 1.1201283, y: 0.03143859}
   m_EdgeRadius: 0
 --- !u!50 &5971471319990648293
 Rigidbody2D:
@@ -297,18 +297,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.014808923, y: -0.116001904}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.73, y: 1.01}
+    border: {x: 0.17999999, y: 0.11, z: 2.34, w: 0.32}
+    pivot: {x: 0.2127889, y: 0.5}
+    oldSize: {x: 3.7, y: 2.3}
     newSize: {x: 0.66, y: 0.94}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.94}
+  m_Size: {x: 1.1733696, y: 1.8926951}
   m_EdgeRadius: 0
 --- !u!114 &5971471319990648290
 MonoBehaviour:
@@ -329,6 +329,7 @@ MonoBehaviour:
   isPoliceWithKey: 0
   leftLimit: 3.45
   rightLimit: 10
+  anim: {fileID: 0}
 --- !u!95 &2395227045621983399
 Animator:
   serializedVersion: 4

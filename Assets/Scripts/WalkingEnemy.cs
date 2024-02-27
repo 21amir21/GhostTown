@@ -7,8 +7,19 @@ public class WalkingEnemy : EnemyController
    
     public float leftLimit;
     public float rightLimit;
+	public Animator anim;
 
-   void FixedUpdate()
+	private void Start()
+	{
+		anim = GetComponent<Animator>();
+	}
+
+	private void Update()
+	{
+		anim.SetFloat("Speed", Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.x));
+	}
+
+	void FixedUpdate()
     {
         if(this.isFacingRight == true)
         {
