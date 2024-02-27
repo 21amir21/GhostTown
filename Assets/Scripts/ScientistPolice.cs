@@ -19,6 +19,7 @@ public class ScientistPolice : priChasingEnemy
     }
     private void OnDestroy()
     {
+
         Debug.Log("ondestroy fel prichasing working fol");
         scipolicemenkilled++;
         FindObjectOfType<ScientistLock>().policeCounter();
@@ -29,5 +30,7 @@ public class ScientistPolice : priChasingEnemy
 
 
         }
-    }
+
+		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
+	}
 }

@@ -18,7 +18,6 @@ public class HealthCanvas : MonoBehaviour
 	public UnityEngine.UI.Image gun;
 	public UnityEngine.UI.Image tafa;
 
-
 	// Start is called before the first frame update
 	void Start()
 	{

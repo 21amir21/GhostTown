@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +8,11 @@ public class VentPolicescene2 : MonoBehaviour
 {
 	private SpriteRenderer policevent;
 	public Sprite policeopenvent;
-	//public int numberOfPeople;
-	//public int numberOfPeopleKilled = 0;
+
+	public int numberOfPeople;
+	public int numberOfPeopleKilled = 0;
+	public TextMeshProUGUI peoplecount;
+	public TextMeshProUGUI killcount;
 
 	// Start is called before the first frame update
 	void Start()
@@ -18,16 +22,22 @@ public class VentPolicescene2 : MonoBehaviour
 
 	private void Update()
 	{
-		//numberOfPeople = FindObjectOfType<EndOfLevel>().numberOfPeople;
-		//numberOfPeopleKilled = FindObjectOfType<EndOfLevel>().numberOfPeopleKilled;
+		peoplecount.text = "" + numberOfPeople;
+		killcount.text = "" + numberOfPeopleKilled;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Player")
+		if (other.CompareTag("Player") && numberOfPeopleKilled >= numberOfPeople)
 		{
 			policevent.sprite = policeopenvent;
-			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			FindObjectOfType<CameraFade>().fade = true;
+			Invoke("Fade", 1);
 		}
+	}
+
+	private void Fade()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

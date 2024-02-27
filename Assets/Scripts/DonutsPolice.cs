@@ -15,7 +15,7 @@ public class DonutsPolice : EnemyController
 	private void OnDestroy()
 	{
 		FindObjectOfType<AbilityManager>().addShooting();
-		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
+		FindObjectOfType<VentPolicescene2>().numberOfPeopleKilled++;
 	}
 
 }

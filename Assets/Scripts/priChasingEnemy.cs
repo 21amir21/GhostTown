@@ -91,7 +91,7 @@ public class priChasingEnemy : EnemyController
     {
         Debug.Log("ondestroy fel prichasing working fol");
         policemenkilled++;
-		FindObjectOfType<EndOfLevel>().numberOfPeopleKilled++;
+		FindObjectOfType<VentPolicescene2>().numberOfPeopleKilled++;
         if (policemenkilled >= 3)
         {
             Debug.Log("update bta3 ivBox 48al");

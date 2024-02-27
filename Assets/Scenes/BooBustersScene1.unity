@@ -3179,7 +3179,6 @@ GameObject:
   - component: {fileID: 1422544155}
   - component: {fileID: 1422544153}
   - component: {fileID: 1422544157}
-  - component: {fileID: 1422544158}
   m_Layer: 0
   m_Name: vent (2)
   m_TagString: Untagged
@@ -3293,20 +3292,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1426759, y: 1.4629452}
   m_EdgeRadius: 0
---- !u!114 &1422544158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422544152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3783dc6f1fc5d742ad6f14e7fbb3c30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfPeople: 0
-  numberOfPeopleKilled: 0
 --- !u!1001 &1423355352
 PrefabInstance:
   m_ObjectHideFlags: 0
