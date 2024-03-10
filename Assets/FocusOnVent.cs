@@ -37,12 +37,12 @@ public class FocusOnVent : MonoBehaviour
         {
             this.enabled = false;
             FindObjectOfType<CameraFollowPri>().enabled = true;
-            FindObjectOfType<SwimmingMovement>().enabled = true;
+            FindObjectOfType<PlayerMovement>().enabled = true;
         }
     }
     public void VentCameraEnable()
     {
         this.enabled = true;
-        FindObjectOfType<SwimmingMovement>().enabled = false;
+        FindObjectOfType<PlayerMovement>().enabled = false;
     }
 }

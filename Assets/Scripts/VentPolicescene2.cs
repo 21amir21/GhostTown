@@ -24,6 +24,13 @@ public class VentPolicescene2 : MonoBehaviour
 	{
 		peoplecount.text = "" + numberOfPeople;
 		killcount.text = "" + numberOfPeopleKilled;
+
+		if (numberOfPeople == numberOfPeopleKilled)
+		{
+			Debug.Log("Here");
+			//script.SetActive(true);
+			FindObjectOfType<FocusOnVent>().enabled = true;
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)

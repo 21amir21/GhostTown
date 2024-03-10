@@ -30,6 +30,18 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelDivider1.unity
     guid: a60f73d7b0fab504a8b331504477d39f
   - enabled: 1
+    path: Assets/HowToPlay/HowToPlay.unity
+    guid: 381ceef8f61a55547bfcd9a8a836bf7b
+  - enabled: 1
+    path: Assets/HowToPlay/JumpHowToPlay.unity
+    guid: 4998b4450521683408bcdd7a27b56c27
+  - enabled: 1
+    path: Assets/HowToPlay/AbilitySelectHowToPlay.unity
+    guid: b758e9a52ae43804b8a91fb285cbe907
+  - enabled: 1
+    path: Assets/HowToPlay/UseAbilityHowToPlay.unity
+    guid: c74011559282fd14288aabb3451c9869
+  - enabled: 1
     path: Assets/Scenes/ContructionLevel_Scene1.unity
     guid: 1b365d05f1ff0d045afea5f0734b46ce
   - enabled: 1

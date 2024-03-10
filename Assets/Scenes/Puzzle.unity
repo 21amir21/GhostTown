@@ -704,7 +704,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -745,7 +745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626189676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.95, y: -3.08, z: -10}
+  m_LocalPosition: {x: -67.28, y: -3.08, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1825,11 +1825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812122705148205730, guid: 74cad22d3ee16d244bd6bb64af02f882, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6625217
+      value: 6.7127643
       objectReference: {fileID: 0}
     - target: {fileID: 1812122705148205730, guid: 74cad22d3ee16d244bd6bb64af02f882, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.53
+      value: -50.9038
       objectReference: {fileID: 0}
     - target: {fileID: 1812122705148205730, guid: 74cad22d3ee16d244bd6bb64af02f882, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2918,6 +2918,7 @@ MonoBehaviour:
   currentAbility: 0
   abilityCount: 0
   abilityGained: 0
+  tafaGained: 0
   clip: {fileID: 0}
   clip2: {fileID: 0}
 --- !u!4 &1726490903
