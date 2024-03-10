@@ -112,7 +112,7 @@ public class PlayerStats : MonoBehaviour
 			FindObjectOfType<AbilityManager>().abilityGained = false;
 		}
 		Debug.Log("Gameover"); // TODO: add game over splash screen
-		SceneManager.LoadScene(34, LoadSceneMode.Additive);
+		SceneManager.LoadScene(38, LoadSceneMode.Additive);
 	}
 
 	public void CollectBarrel()
